@@ -1,0 +1,615 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5933080A439D3937920B60D4 /* Pods_Antitasker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60490A3F77E79DF65973264C /* Pods_Antitasker.framework */; };
+		DEE101822A1D001B000ED6AE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DEE101812A1D001B000ED6AE /* Assets.xcassets */; };
+		DEE101852A1D001B000ED6AE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DEE101832A1D001B000ED6AE /* LaunchScreen.storyboard */; };
+		DEE101CB2A1D0112000ED6AE /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE101922A1D0112000ED6AE /* UIColor+Extension.swift */; };
+		DEE101CD2A1D0112000ED6AE /* Collection+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE101942A1D0112000ED6AE /* Collection+Extension.swift */; };
+		DEE101CE2A1D0112000ED6AE /* ObservableAndSingle+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE101952A1D0112000ED6AE /* ObservableAndSingle+Extension.swift */; };
+		DEE101CF2A1D0112000ED6AE /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE101962A1D0112000ED6AE /* String+Extension.swift */; };
+		DEE101D02A1D0112000ED6AE /* UIViewRxExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE101972A1D0112000ED6AE /* UIViewRxExtension.swift */; };
+		DEE101D52A1D0112000ED6AE /* Scalable.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE1019F2A1D0112000ED6AE /* Scalable.swift */; };
+		DEE101D72A1D0112000ED6AE /* TextAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE101A12A1D0112000ED6AE /* TextAttributes.swift */; };
+		DEE101D82A1D0112000ED6AE /* ScreenSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE101A22A1D0112000ED6AE /* ScreenSize.swift */; };
+		DEE101DB2A1D0112000ED6AE /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE101A52A1D0112000ED6AE /* Fonts.swift */; };
+		DEE101DE2A1D0112000ED6AE /* ContentError.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE101A92A1D0112000ED6AE /* ContentError.swift */; };
+		DEE101E22A1D0112000ED6AE /* RxActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE101AE2A1D0112000ED6AE /* RxActivityIndicator.swift */; };
+		DEE101E42A1D0112000ED6AE /* NavigationControllerSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE101B22A1D0112000ED6AE /* NavigationControllerSettings.swift */; };
+		DEE101E52A1D0112000ED6AE /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE101B32A1D0112000ED6AE /* NavigationController.swift */; };
+		DEE101E62A1D0112000ED6AE /* TapAreaButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE101B42A1D0112000ED6AE /* TapAreaButton.swift */; };
+		DEE101E82A1D0112000ED6AE /* PaddingTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE101B62A1D0112000ED6AE /* PaddingTextField.swift */; };
+		DEE101EB2A1D0112000ED6AE /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE101B92A1D0112000ED6AE /* GradientView.swift */; };
+		DEE101ED2A1D0112000ED6AE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE101BB2A1D0112000ED6AE /* AppDelegate.swift */; };
+		DEE101F12A1D0112000ED6AE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE101C12A1D0112000ED6AE /* SceneDelegate.swift */; };
+		DEE102012A1D0BA6000ED6AE /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE102002A1D0BA6000ED6AE /* SplashViewController.swift */; };
+		DEE102032A1D0BAC000ED6AE /* SplashViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE102022A1D0BAC000ED6AE /* SplashViewModel.swift */; };
+		DEE102052A1D0BB7000ED6AE /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE102042A1D0BB7000ED6AE /* SplashView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		60490A3F77E79DF65973264C /* Pods_Antitasker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Antitasker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8828480017C64E5EB4E02EC2 /* Pods-Antitasker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Antitasker.release.xcconfig"; path = "Target Support Files/Pods-Antitasker/Pods-Antitasker.release.xcconfig"; sourceTree = "<group>"; };
+		DEE101752A1D001A000ED6AE /* Antitasker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Antitasker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DEE101812A1D001B000ED6AE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DEE101842A1D001B000ED6AE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DEE101862A1D001B000ED6AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DEE101922A1D0112000ED6AE /* UIColor+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
+		DEE101942A1D0112000ED6AE /* Collection+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Collection+Extension.swift"; sourceTree = "<group>"; };
+		DEE101952A1D0112000ED6AE /* ObservableAndSingle+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ObservableAndSingle+Extension.swift"; sourceTree = "<group>"; };
+		DEE101962A1D0112000ED6AE /* String+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
+		DEE101972A1D0112000ED6AE /* UIViewRxExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewRxExtension.swift; sourceTree = "<group>"; };
+		DEE1019F2A1D0112000ED6AE /* Scalable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Scalable.swift; sourceTree = "<group>"; };
+		DEE101A12A1D0112000ED6AE /* TextAttributes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextAttributes.swift; sourceTree = "<group>"; };
+		DEE101A22A1D0112000ED6AE /* ScreenSize.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScreenSize.swift; sourceTree = "<group>"; };
+		DEE101A52A1D0112000ED6AE /* Fonts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
+		DEE101A92A1D0112000ED6AE /* ContentError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentError.swift; sourceTree = "<group>"; };
+		DEE101AE2A1D0112000ED6AE /* RxActivityIndicator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RxActivityIndicator.swift; sourceTree = "<group>"; };
+		DEE101B22A1D0112000ED6AE /* NavigationControllerSettings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationControllerSettings.swift; sourceTree = "<group>"; };
+		DEE101B32A1D0112000ED6AE /* NavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
+		DEE101B42A1D0112000ED6AE /* TapAreaButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TapAreaButton.swift; sourceTree = "<group>"; };
+		DEE101B62A1D0112000ED6AE /* PaddingTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaddingTextField.swift; sourceTree = "<group>"; };
+		DEE101B92A1D0112000ED6AE /* GradientView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
+		DEE101BB2A1D0112000ED6AE /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DEE101C12A1D0112000ED6AE /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		DEE101FA2A1D0A66000ED6AE /* Ubuntu-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Ubuntu-Bold.ttf"; sourceTree = "<group>"; };
+		DEE101FB2A1D0A6A000ED6AE /* Ubuntu-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Ubuntu-Medium.ttf"; sourceTree = "<group>"; };
+		DEE101FC2A1D0A6D000ED6AE /* Ubuntu-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Ubuntu-Regular.ttf"; sourceTree = "<group>"; };
+		DEE102002A1D0BA6000ED6AE /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
+		DEE102022A1D0BAC000ED6AE /* SplashViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewModel.swift; sourceTree = "<group>"; };
+		DEE102042A1D0BB7000ED6AE /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
+		F175C85F03BE623EC23ED9B8 /* Pods-Antitasker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Antitasker.debug.xcconfig"; path = "Target Support Files/Pods-Antitasker/Pods-Antitasker.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DEE101722A1D001A000ED6AE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5933080A439D3937920B60D4 /* Pods_Antitasker.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C5247AE664A80640DAA25DF2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F175C85F03BE623EC23ED9B8 /* Pods-Antitasker.debug.xcconfig */,
+				8828480017C64E5EB4E02EC2 /* Pods-Antitasker.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		DEE1016C2A1D001A000ED6AE = {
+			isa = PBXGroup;
+			children = (
+				DEE101772A1D001A000ED6AE /* Antitasker */,
+				DEE101762A1D001A000ED6AE /* Products */,
+				C5247AE664A80640DAA25DF2 /* Pods */,
+				FFAA9ED75835A331EC6DFF15 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		DEE101762A1D001A000ED6AE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DEE101752A1D001A000ED6AE /* Antitasker.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DEE101772A1D001A000ED6AE /* Antitasker */ = {
+			isa = PBXGroup;
+			children = (
+				DEE1018D2A1D004A000ED6AE /* Classes */,
+				DEE1018C2A1D0043000ED6AE /* Resource */,
+			);
+			path = Antitasker;
+			sourceTree = "<group>";
+		};
+		DEE1018C2A1D0043000ED6AE /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				DEE101F82A1D0A5A000ED6AE /* Fonts */,
+				DEE101832A1D001B000ED6AE /* LaunchScreen.storyboard */,
+				DEE101862A1D001B000ED6AE /* Info.plist */,
+				DEE101812A1D001B000ED6AE /* Assets.xcassets */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		DEE1018D2A1D004A000ED6AE /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				DEE1018E2A1D0112000ED6AE /* Misc */,
+				DEE101FD2A1D0B89000ED6AE /* Service */,
+				DEE101FE2A1D0B8F000ED6AE /* Presentation */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		DEE1018E2A1D0112000ED6AE /* Misc */ = {
+			isa = PBXGroup;
+			children = (
+				DEE1018F2A1D0112000ED6AE /* Extension */,
+				DEE1019E2A1D0112000ED6AE /* Utils */,
+				DEE101AB2A1D0112000ED6AE /* Components */,
+				DEE101B02A1D0112000ED6AE /* CustomViews */,
+				DEE101BB2A1D0112000ED6AE /* AppDelegate.swift */,
+				DEE101C12A1D0112000ED6AE /* SceneDelegate.swift */,
+			);
+			path = Misc;
+			sourceTree = "<group>";
+		};
+		DEE1018F2A1D0112000ED6AE /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				DEE101922A1D0112000ED6AE /* UIColor+Extension.swift */,
+				DEE101942A1D0112000ED6AE /* Collection+Extension.swift */,
+				DEE101952A1D0112000ED6AE /* ObservableAndSingle+Extension.swift */,
+				DEE101962A1D0112000ED6AE /* String+Extension.swift */,
+				DEE101972A1D0112000ED6AE /* UIViewRxExtension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		DEE1019E2A1D0112000ED6AE /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				DEE101A62A1D0112000ED6AE /* Error */,
+				DEE1019F2A1D0112000ED6AE /* Scalable.swift */,
+				DEE101A12A1D0112000ED6AE /* TextAttributes.swift */,
+				DEE101A22A1D0112000ED6AE /* ScreenSize.swift */,
+				DEE101A52A1D0112000ED6AE /* Fonts.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		DEE101A62A1D0112000ED6AE /* Error */ = {
+			isa = PBXGroup;
+			children = (
+				DEE101A92A1D0112000ED6AE /* ContentError.swift */,
+			);
+			path = Error;
+			sourceTree = "<group>";
+		};
+		DEE101AB2A1D0112000ED6AE /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				DEE101AE2A1D0112000ED6AE /* RxActivityIndicator.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		DEE101B02A1D0112000ED6AE /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+				DEE101B12A1D0112000ED6AE /* NavigationController */,
+				DEE101B42A1D0112000ED6AE /* TapAreaButton.swift */,
+				DEE101B62A1D0112000ED6AE /* PaddingTextField.swift */,
+				DEE101B92A1D0112000ED6AE /* GradientView.swift */,
+			);
+			path = CustomViews;
+			sourceTree = "<group>";
+		};
+		DEE101B12A1D0112000ED6AE /* NavigationController */ = {
+			isa = PBXGroup;
+			children = (
+				DEE101B22A1D0112000ED6AE /* NavigationControllerSettings.swift */,
+				DEE101B32A1D0112000ED6AE /* NavigationController.swift */,
+			);
+			path = NavigationController;
+			sourceTree = "<group>";
+		};
+		DEE101F82A1D0A5A000ED6AE /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				DEE101F92A1D0A5E000ED6AE /* Ubuntu */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		DEE101F92A1D0A5E000ED6AE /* Ubuntu */ = {
+			isa = PBXGroup;
+			children = (
+				DEE101FC2A1D0A6D000ED6AE /* Ubuntu-Regular.ttf */,
+				DEE101FB2A1D0A6A000ED6AE /* Ubuntu-Medium.ttf */,
+				DEE101FA2A1D0A66000ED6AE /* Ubuntu-Bold.ttf */,
+			);
+			path = Ubuntu;
+			sourceTree = "<group>";
+		};
+		DEE101FD2A1D0B89000ED6AE /* Service */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		DEE101FE2A1D0B8F000ED6AE /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				DEE101FF2A1D0B9C000ED6AE /* Splash */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		DEE101FF2A1D0B9C000ED6AE /* Splash */ = {
+			isa = PBXGroup;
+			children = (
+				DEE102002A1D0BA6000ED6AE /* SplashViewController.swift */,
+				DEE102022A1D0BAC000ED6AE /* SplashViewModel.swift */,
+				DEE102042A1D0BB7000ED6AE /* SplashView.swift */,
+			);
+			path = Splash;
+			sourceTree = "<group>";
+		};
+		FFAA9ED75835A331EC6DFF15 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				60490A3F77E79DF65973264C /* Pods_Antitasker.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DEE101742A1D001A000ED6AE /* Antitasker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DEE101892A1D001B000ED6AE /* Build configuration list for PBXNativeTarget "Antitasker" */;
+			buildPhases = (
+				F9EFB90D3728551BBDAC6DF7 /* [CP] Check Pods Manifest.lock */,
+				DEE101712A1D001A000ED6AE /* Sources */,
+				DEE101722A1D001A000ED6AE /* Frameworks */,
+				DEE101732A1D001A000ED6AE /* Resources */,
+				B75E908E9C0E1AF78835A560 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Antitasker;
+			productName = Antitasker;
+			productReference = DEE101752A1D001A000ED6AE /* Antitasker.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DEE1016D2A1D001A000ED6AE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					DEE101742A1D001A000ED6AE = {
+						CreatedOnToolsVersion = 14.2;
+					};
+				};
+			};
+			buildConfigurationList = DEE101702A1D001A000ED6AE /* Build configuration list for PBXProject "Antitasker" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DEE1016C2A1D001A000ED6AE;
+			productRefGroup = DEE101762A1D001A000ED6AE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DEE101742A1D001A000ED6AE /* Antitasker */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DEE101732A1D001A000ED6AE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DEE101852A1D001B000ED6AE /* LaunchScreen.storyboard in Resources */,
+				DEE101822A1D001B000ED6AE /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		B75E908E9C0E1AF78835A560 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Antitasker/Pods-Antitasker-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Antitasker/Pods-Antitasker-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Antitasker/Pods-Antitasker-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F9EFB90D3728551BBDAC6DF7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Antitasker-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DEE101712A1D001A000ED6AE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DEE101E62A1D0112000ED6AE /* TapAreaButton.swift in Sources */,
+				DEE101CB2A1D0112000ED6AE /* UIColor+Extension.swift in Sources */,
+				DEE101CF2A1D0112000ED6AE /* String+Extension.swift in Sources */,
+				DEE101E22A1D0112000ED6AE /* RxActivityIndicator.swift in Sources */,
+				DEE101D02A1D0112000ED6AE /* UIViewRxExtension.swift in Sources */,
+				DEE101ED2A1D0112000ED6AE /* AppDelegate.swift in Sources */,
+				DEE101D82A1D0112000ED6AE /* ScreenSize.swift in Sources */,
+				DEE101E42A1D0112000ED6AE /* NavigationControllerSettings.swift in Sources */,
+				DEE101CE2A1D0112000ED6AE /* ObservableAndSingle+Extension.swift in Sources */,
+				DEE101E82A1D0112000ED6AE /* PaddingTextField.swift in Sources */,
+				DEE101DE2A1D0112000ED6AE /* ContentError.swift in Sources */,
+				DEE101D52A1D0112000ED6AE /* Scalable.swift in Sources */,
+				DEE101E52A1D0112000ED6AE /* NavigationController.swift in Sources */,
+				DEE101D72A1D0112000ED6AE /* TextAttributes.swift in Sources */,
+				DEE102012A1D0BA6000ED6AE /* SplashViewController.swift in Sources */,
+				DEE102032A1D0BAC000ED6AE /* SplashViewModel.swift in Sources */,
+				DEE101F12A1D0112000ED6AE /* SceneDelegate.swift in Sources */,
+				DEE101EB2A1D0112000ED6AE /* GradientView.swift in Sources */,
+				DEE101DB2A1D0112000ED6AE /* Fonts.swift in Sources */,
+				DEE101CD2A1D0112000ED6AE /* Collection+Extension.swift in Sources */,
+				DEE102052A1D0BB7000ED6AE /* SplashView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		DEE101832A1D001B000ED6AE /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DEE101842A1D001B000ED6AE /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DEE101872A1D001B000ED6AE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DEE101882A1D001B000ED6AE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DEE1018A2A1D001B000ED6AE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F175C85F03BE623EC23ED9B8 /* Pods-Antitasker.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Antitasker/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = wed.Antitasker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		DEE1018B2A1D001B000ED6AE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8828480017C64E5EB4E02EC2 /* Pods-Antitasker.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Antitasker/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = wed.Antitasker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DEE101702A1D001A000ED6AE /* Build configuration list for PBXProject "Antitasker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DEE101872A1D001B000ED6AE /* Debug */,
+				DEE101882A1D001B000ED6AE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DEE101892A1D001B000ED6AE /* Build configuration list for PBXNativeTarget "Antitasker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DEE1018A2A1D001B000ED6AE /* Debug */,
+				DEE1018B2A1D001B000ED6AE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DEE1016D2A1D001A000ED6AE /* Project object */;
+}
