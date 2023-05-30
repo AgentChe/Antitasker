@@ -8,6 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		5933080A439D3937920B60D4 /* Pods_Antitasker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60490A3F77E79DF65973264C /* Pods_Antitasker.framework */; };
+		DEB2B2952A25FA2400C26FC5 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEB2B2942A25FA2400C26FC5 /* Profile.swift */; };
+		DEB2B2972A25FB0300C26FC5 /* ProfileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEB2B2962A25FB0300C26FC5 /* ProfileManager.swift */; };
+		DEB2B29B2A25FF1E00C26FC5 /* TaskStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEB2B29A2A25FF1E00C26FC5 /* TaskStatus.swift */; };
+		DEB2B29D2A25FF3F00C26FC5 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEB2B29C2A25FF3F00C26FC5 /* Task.swift */; };
+		DEB2B29F2A25FFCC00C26FC5 /* EasterTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEB2B29E2A25FFCC00C26FC5 /* EasterTask.swift */; };
+		DEB2B2A22A26025500C26FC5 /* TaskManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEB2B2A12A26025500C26FC5 /* TaskManager.swift */; };
+		DEB2B2A42A26029C00C26FC5 /* Fatigue.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEB2B2A32A26029C00C26FC5 /* Fatigue.swift */; };
+		DEB2B2A62A26049F00C26FC5 /* Punishment.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEB2B2A52A26049F00C26FC5 /* Punishment.swift */; };
 		DEE101822A1D001B000ED6AE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DEE101812A1D001B000ED6AE /* Assets.xcassets */; };
 		DEE101852A1D001B000ED6AE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DEE101832A1D001B000ED6AE /* LaunchScreen.storyboard */; };
 		DEE101CB2A1D0112000ED6AE /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE101922A1D0112000ED6AE /* UIColor+Extension.swift */; };
@@ -36,6 +44,14 @@
 /* Begin PBXFileReference section */
 		60490A3F77E79DF65973264C /* Pods_Antitasker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Antitasker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8828480017C64E5EB4E02EC2 /* Pods-Antitasker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Antitasker.release.xcconfig"; path = "Target Support Files/Pods-Antitasker/Pods-Antitasker.release.xcconfig"; sourceTree = "<group>"; };
+		DEB2B2942A25FA2400C26FC5 /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
+		DEB2B2962A25FB0300C26FC5 /* ProfileManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileManager.swift; sourceTree = "<group>"; };
+		DEB2B29A2A25FF1E00C26FC5 /* TaskStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskStatus.swift; sourceTree = "<group>"; };
+		DEB2B29C2A25FF3F00C26FC5 /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
+		DEB2B29E2A25FFCC00C26FC5 /* EasterTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EasterTask.swift; sourceTree = "<group>"; };
+		DEB2B2A12A26025500C26FC5 /* TaskManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskManager.swift; sourceTree = "<group>"; };
+		DEB2B2A32A26029C00C26FC5 /* Fatigue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fatigue.swift; sourceTree = "<group>"; };
+		DEB2B2A52A26049F00C26FC5 /* Punishment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Punishment.swift; sourceTree = "<group>"; };
 		DEE101752A1D001A000ED6AE /* Antitasker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Antitasker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DEE101812A1D001B000ED6AE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DEE101842A1D001B000ED6AE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -86,6 +102,44 @@
 				8828480017C64E5EB4E02EC2 /* Pods-Antitasker.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		DEB2B2922A25FA1100C26FC5 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				DEB2B2932A25FA1C00C26FC5 /* Model */,
+				DEB2B2962A25FB0300C26FC5 /* ProfileManager.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		DEB2B2932A25FA1C00C26FC5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DEB2B2942A25FA2400C26FC5 /* Profile.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		DEB2B2982A25FE2700C26FC5 /* Task */ = {
+			isa = PBXGroup;
+			children = (
+				DEB2B2992A25FF1100C26FC5 /* Model */,
+				DEB2B2A12A26025500C26FC5 /* TaskManager.swift */,
+			);
+			path = Task;
+			sourceTree = "<group>";
+		};
+		DEB2B2992A25FF1100C26FC5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DEB2B29A2A25FF1E00C26FC5 /* TaskStatus.swift */,
+				DEB2B29C2A25FF3F00C26FC5 /* Task.swift */,
+				DEB2B29E2A25FFCC00C26FC5 /* EasterTask.swift */,
+				DEB2B2A32A26029C00C26FC5 /* Fatigue.swift */,
+				DEB2B2A52A26049F00C26FC5 /* Punishment.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		DEE1016C2A1D001A000ED6AE = {
@@ -230,6 +284,8 @@
 		DEE101FD2A1D0B89000ED6AE /* Service */ = {
 			isa = PBXGroup;
 			children = (
+				DEB2B2982A25FE2700C26FC5 /* Task */,
+				DEB2B2922A25FA1100C26FC5 /* Profile */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -374,25 +430,33 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DEB2B2A22A26025500C26FC5 /* TaskManager.swift in Sources */,
 				DEE101E62A1D0112000ED6AE /* TapAreaButton.swift in Sources */,
 				DEE101CB2A1D0112000ED6AE /* UIColor+Extension.swift in Sources */,
 				DEE101CF2A1D0112000ED6AE /* String+Extension.swift in Sources */,
 				DEE101E22A1D0112000ED6AE /* RxActivityIndicator.swift in Sources */,
 				DEE101D02A1D0112000ED6AE /* UIViewRxExtension.swift in Sources */,
 				DEE101ED2A1D0112000ED6AE /* AppDelegate.swift in Sources */,
+				DEB2B2972A25FB0300C26FC5 /* ProfileManager.swift in Sources */,
 				DEE101D82A1D0112000ED6AE /* ScreenSize.swift in Sources */,
+				DEB2B2A42A26029C00C26FC5 /* Fatigue.swift in Sources */,
+				DEB2B2A62A26049F00C26FC5 /* Punishment.swift in Sources */,
 				DEE101E42A1D0112000ED6AE /* NavigationControllerSettings.swift in Sources */,
 				DEE101CE2A1D0112000ED6AE /* ObservableAndSingle+Extension.swift in Sources */,
 				DEE101E82A1D0112000ED6AE /* PaddingTextField.swift in Sources */,
 				DEE101DE2A1D0112000ED6AE /* ContentError.swift in Sources */,
+				DEB2B29D2A25FF3F00C26FC5 /* Task.swift in Sources */,
 				DEE101D52A1D0112000ED6AE /* Scalable.swift in Sources */,
 				DEE101E52A1D0112000ED6AE /* NavigationController.swift in Sources */,
 				DEE101D72A1D0112000ED6AE /* TextAttributes.swift in Sources */,
+				DEB2B29F2A25FFCC00C26FC5 /* EasterTask.swift in Sources */,
 				DEE102012A1D0BA6000ED6AE /* SplashViewController.swift in Sources */,
 				DEE102032A1D0BAC000ED6AE /* SplashViewModel.swift in Sources */,
 				DEE101F12A1D0112000ED6AE /* SceneDelegate.swift in Sources */,
+				DEB2B29B2A25FF1E00C26FC5 /* TaskStatus.swift in Sources */,
 				DEE101EB2A1D0112000ED6AE /* GradientView.swift in Sources */,
 				DEE101DB2A1D0112000ED6AE /* Fonts.swift in Sources */,
+				DEB2B2952A25FA2400C26FC5 /* Profile.swift in Sources */,
 				DEE101CD2A1D0112000ED6AE /* Collection+Extension.swift in Sources */,
 				DEE102052A1D0BB7000ED6AE /* SplashView.swift in Sources */,
 			);
