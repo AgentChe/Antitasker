@@ -1,0 +1,17 @@
+/* 
+  Localizable.strings
+  Antitasker
+
+  Created by Андрей Чернышев on 30.05.2023.
+  
+*/
+
+// MARK: Splash
+"Splash.Tag1" = "Займись жизнью,\nа не работой";
+"Splash.Tag2" = "Опять дела?";
+"Splash.Tag3" = "Так и жизнь пройдет";
+
+// MARK: InputName
+"InputName.Title" = "Имя";
+"InputName.Placeholder" = "Как тебя зовут?";
+"InputName.Button" = "Продолжить";
