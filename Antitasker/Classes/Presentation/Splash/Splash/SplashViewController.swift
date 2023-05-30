@@ -53,6 +53,9 @@ private extension SplashViewController {
                 self?.didInputNameTrigger.accept(name)
             }
             present(vc, animated: false)
+        case .information:
+            let vc = InformationViewController.make()
+            present(vc, animated: true)
         case .main:
             print("go to main")
         }

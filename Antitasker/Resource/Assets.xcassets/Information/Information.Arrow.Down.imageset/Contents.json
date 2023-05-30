@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "alt-arrow-down-linear.png",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

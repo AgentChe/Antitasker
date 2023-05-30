@@ -15,3 +15,20 @@
 "InputName.Title" = "Имя";
 "InputName.Placeholder" = "Как тебя зовут?";
 "InputName.Button" = "Продолжить";
+
+// MARK: Information
+"Information.Fatigues" = "Уровни усталости";
+"Information.Fatigues.Text" = "С каждой выполненной задачей у тебя повышается уровень усталости. Вот какие уровни ждут тебя если будешь слишком много работать:";
+"Information.Balls" = "Баллы";
+"Information.Balls.Text" = "Каждая выполненная задача дает %@ к общему уровню усталости. Соответственно, каждая невыполненная задача уменьшает уровень усталости на %@.";
+"Information.Balls.AddBalls" = "+10 баллов";
+"Information.Balls.MinusBalls" = "-10 баллов";
+"Information.Punishment" = "Наказания";
+"Information.Punishment.Text" = "Повышая свой уровень усталости, тебя ждет наказание. Так что будь осторожен, лучше вообще ничего не планировать.";
+"Information.Button" = "Продолжить";
+"Information.Fatigue.WorkLikeHorse" = "🐎️ готов работать как конь 24/7";
+"Information.Fatigue.RatherWeekend" = "🫠 скорее бы выходные";
+"Information.Fatigue.EyesOnClock" = "👀 не свожу глаз с часов в ожидании завершения рабочего дня";
+"Information.Fatigue.WhenIsHoliday" = "😩 когда там отпуск";
+"Information.Fatigue.MaternityLeave" = "🫄 можно мне в декретный отпуск?";
+"Information.Fatigue.Bali" = "🏖 я увольняюсь и сваливаю на Бали";

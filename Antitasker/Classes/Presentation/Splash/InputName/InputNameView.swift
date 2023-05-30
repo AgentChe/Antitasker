@@ -114,6 +114,8 @@ private extension InputNameView {
             .letterSpacing(-0.3.scale)
 
         let view = PaddingTextField()
+        view.layer.cornerRadius = 12.scale
+        view.layer.masksToBounds = true
         view.backgroundColor = UIColor(integralRed: 243, green: 244, blue: 246)
         view.textPadding = UIEdgeInsets(top: 12.scale, left: 16.scale, bottom: 16.scale, right: 12.scale)
         view.defaultTextAttributes = attrs.dictionary

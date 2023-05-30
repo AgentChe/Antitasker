@@ -11,6 +11,7 @@ import RxCocoa
 final class SplashViewModel {
     enum Route {
         case requestName
+        case information
         case main
     }
     
@@ -40,7 +41,7 @@ extension SplashViewModel {
 private extension SplashViewModel {
     func makeRoute(didInputName: Signal<String>) -> Driver<Route> {
         let requestName = profile
-            .compactMap { $0 == nil ? Route.requestName : .main }
+            .compactMap { $0 == nil ? Route.requestName : (InformationViewController.wasViewed ? .main : .information) }
         
         let set = didInputName
             .asDriver(onErrorDriveWith: .never())
@@ -52,7 +53,7 @@ private extension SplashViewModel {
                 return self.profileManager
                     .set(name: name)
                     .asDriver(onErrorDriveWith: .never())
-                    .map { .main }
+                    .map { InformationViewController.wasViewed ? .main : .information }
             }
         
         return Driver

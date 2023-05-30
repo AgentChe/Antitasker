@@ -23,6 +23,18 @@
 		DEB2B2B02A260A3500C26FC5 /* Ubuntu-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DEE101FA2A1D0A66000ED6AE /* Ubuntu-Bold.ttf */; };
 		DEB2B2B52A260CC700C26FC5 /* InputNameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEB2B2B42A260CC700C26FC5 /* InputNameViewController.swift */; };
 		DEB2B2B72A260CCC00C26FC5 /* InputNameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEB2B2B62A260CCC00C26FC5 /* InputNameView.swift */; };
+		DEB2B2BA2A26173800C26FC5 /* InformationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEB2B2B92A26173800C26FC5 /* InformationView.swift */; };
+		DEB2B2BC2A26173F00C26FC5 /* InformationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEB2B2BB2A26173F00C26FC5 /* InformationViewController.swift */; };
+		DEB2B2BE2A26174500C26FC5 /* InformationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEB2B2BD2A26174500C26FC5 /* InformationViewModel.swift */; };
+		DEB2B2C22A26191A00C26FC5 /* InformationTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEB2B2C12A26191A00C26FC5 /* InformationTableView.swift */; };
+		DEB2B2C42A26192100C26FC5 /* InformationTableElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEB2B2C32A26192100C26FC5 /* InformationTableElement.swift */; };
+		DEB2B2C72A26193800C26FC5 /* InformationImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEB2B2C62A26193800C26FC5 /* InformationImageCell.swift */; };
+		DEB2B2C92A261C3F00C26FC5 /* InformationSeparatorCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEB2B2C82A261C3F00C26FC5 /* InformationSeparatorCell.swift */; };
+		DEB2B2CB2A261D2600C26FC5 /* InformationSectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEB2B2CA2A261D2600C26FC5 /* InformationSectionCell.swift */; };
+		DEB2B2CD2A26221100C26FC5 /* InformationButtonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEB2B2CC2A26221100C26FC5 /* InformationButtonCell.swift */; };
+		DEB2B2CF2A2642E100C26FC5 /* InformationTextCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEB2B2CE2A2642E100C26FC5 /* InformationTextCell.swift */; };
+		DEB2B2D12A264AF600C26FC5 /* InformationFatigueCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEB2B2D02A264AF600C26FC5 /* InformationFatigueCell.swift */; };
+		DEB2B2D32A264E2900C26FC5 /* Ubuntu-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DEB2B2D22A264E0D00C26FC5 /* Ubuntu-Light.ttf */; };
 		DEE101822A1D001B000ED6AE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DEE101812A1D001B000ED6AE /* Assets.xcassets */; };
 		DEE101852A1D001B000ED6AE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DEE101832A1D001B000ED6AE /* LaunchScreen.storyboard */; };
 		DEE101CB2A1D0112000ED6AE /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE101922A1D0112000ED6AE /* UIColor+Extension.swift */; };
@@ -63,6 +75,18 @@
 		DEB2B2AC2A2607CD00C26FC5 /* PaddingLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaddingLabel.swift; sourceTree = "<group>"; };
 		DEB2B2B42A260CC700C26FC5 /* InputNameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputNameViewController.swift; sourceTree = "<group>"; };
 		DEB2B2B62A260CCC00C26FC5 /* InputNameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputNameView.swift; sourceTree = "<group>"; };
+		DEB2B2B92A26173800C26FC5 /* InformationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InformationView.swift; sourceTree = "<group>"; };
+		DEB2B2BB2A26173F00C26FC5 /* InformationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InformationViewController.swift; sourceTree = "<group>"; };
+		DEB2B2BD2A26174500C26FC5 /* InformationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InformationViewModel.swift; sourceTree = "<group>"; };
+		DEB2B2C12A26191A00C26FC5 /* InformationTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InformationTableView.swift; sourceTree = "<group>"; };
+		DEB2B2C32A26192100C26FC5 /* InformationTableElement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InformationTableElement.swift; sourceTree = "<group>"; };
+		DEB2B2C62A26193800C26FC5 /* InformationImageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InformationImageCell.swift; sourceTree = "<group>"; };
+		DEB2B2C82A261C3F00C26FC5 /* InformationSeparatorCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InformationSeparatorCell.swift; sourceTree = "<group>"; };
+		DEB2B2CA2A261D2600C26FC5 /* InformationSectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InformationSectionCell.swift; sourceTree = "<group>"; };
+		DEB2B2CC2A26221100C26FC5 /* InformationButtonCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InformationButtonCell.swift; sourceTree = "<group>"; };
+		DEB2B2CE2A2642E100C26FC5 /* InformationTextCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InformationTextCell.swift; sourceTree = "<group>"; };
+		DEB2B2D02A264AF600C26FC5 /* InformationFatigueCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InformationFatigueCell.swift; sourceTree = "<group>"; };
+		DEB2B2D22A264E0D00C26FC5 /* Ubuntu-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Ubuntu-Light.ttf"; sourceTree = "<group>"; };
 		DEE101752A1D001A000ED6AE /* Antitasker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Antitasker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DEE101812A1D001B000ED6AE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DEE101842A1D001B000ED6AE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -170,6 +194,48 @@
 				DEB2B2B62A260CCC00C26FC5 /* InputNameView.swift */,
 			);
 			path = InputName;
+			sourceTree = "<group>";
+		};
+		DEB2B2B82A26172E00C26FC5 /* Information */ = {
+			isa = PBXGroup;
+			children = (
+				DEB2B2BF2A2618D600C26FC5 /* Views */,
+				DEB2B2BB2A26173F00C26FC5 /* InformationViewController.swift */,
+				DEB2B2BD2A26174500C26FC5 /* InformationViewModel.swift */,
+				DEB2B2B92A26173800C26FC5 /* InformationView.swift */,
+			);
+			path = Information;
+			sourceTree = "<group>";
+		};
+		DEB2B2BF2A2618D600C26FC5 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DEB2B2C02A26190B00C26FC5 /* TableView */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		DEB2B2C02A26190B00C26FC5 /* TableView */ = {
+			isa = PBXGroup;
+			children = (
+				DEB2B2C52A26192700C26FC5 /* Cells */,
+				DEB2B2C12A26191A00C26FC5 /* InformationTableView.swift */,
+				DEB2B2C32A26192100C26FC5 /* InformationTableElement.swift */,
+			);
+			path = TableView;
+			sourceTree = "<group>";
+		};
+		DEB2B2C52A26192700C26FC5 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				DEB2B2C62A26193800C26FC5 /* InformationImageCell.swift */,
+				DEB2B2C82A261C3F00C26FC5 /* InformationSeparatorCell.swift */,
+				DEB2B2CA2A261D2600C26FC5 /* InformationSectionCell.swift */,
+				DEB2B2CC2A26221100C26FC5 /* InformationButtonCell.swift */,
+				DEB2B2CE2A2642E100C26FC5 /* InformationTextCell.swift */,
+				DEB2B2D02A264AF600C26FC5 /* InformationFatigueCell.swift */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 		DEE1016C2A1D001A000ED6AE = {
@@ -306,6 +372,7 @@
 		DEE101F92A1D0A5E000ED6AE /* Ubuntu */ = {
 			isa = PBXGroup;
 			children = (
+				DEB2B2D22A264E0D00C26FC5 /* Ubuntu-Light.ttf */,
 				DEE101FC2A1D0A6D000ED6AE /* Ubuntu-Regular.ttf */,
 				DEE101FB2A1D0A6A000ED6AE /* Ubuntu-Medium.ttf */,
 				DEE101FA2A1D0A66000ED6AE /* Ubuntu-Bold.ttf */,
@@ -333,6 +400,7 @@
 		DEE101FF2A1D0B9C000ED6AE /* Splash */ = {
 			isa = PBXGroup;
 			children = (
+				DEB2B2B82A26172E00C26FC5 /* Information */,
 				DEB2B2B32A260CB400C26FC5 /* InputName */,
 				DEB2B2B22A260C8D00C26FC5 /* Splash */,
 			);
@@ -407,6 +475,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DEB2B2D32A264E2900C26FC5 /* Ubuntu-Light.ttf in Resources */,
 				DEB2B2AE2A260A3500C26FC5 /* Ubuntu-Regular.ttf in Resources */,
 				DEB2B2AF2A260A3500C26FC5 /* Ubuntu-Medium.ttf in Resources */,
 				DEB2B2B02A260A3500C26FC5 /* Ubuntu-Bold.ttf in Resources */,
@@ -475,10 +544,16 @@
 				DEB2B2AD2A2607CD00C26FC5 /* PaddingLabel.swift in Sources */,
 				DEE101ED2A1D0112000ED6AE /* AppDelegate.swift in Sources */,
 				DEB2B2972A25FB0300C26FC5 /* ProfileManager.swift in Sources */,
+				DEB2B2C72A26193800C26FC5 /* InformationImageCell.swift in Sources */,
+				DEB2B2C42A26192100C26FC5 /* InformationTableElement.swift in Sources */,
 				DEE101D82A1D0112000ED6AE /* ScreenSize.swift in Sources */,
+				DEB2B2CD2A26221100C26FC5 /* InformationButtonCell.swift in Sources */,
 				DEB2B2A42A26029C00C26FC5 /* Fatigue.swift in Sources */,
+				DEB2B2BA2A26173800C26FC5 /* InformationView.swift in Sources */,
+				DEB2B2BE2A26174500C26FC5 /* InformationViewModel.swift in Sources */,
 				DEB2B2A62A26049F00C26FC5 /* Punishment.swift in Sources */,
 				DEE101E42A1D0112000ED6AE /* NavigationControllerSettings.swift in Sources */,
+				DEB2B2CB2A261D2600C26FC5 /* InformationSectionCell.swift in Sources */,
 				DEE101CE2A1D0112000ED6AE /* ObservableAndSingle+Extension.swift in Sources */,
 				DEE101E82A1D0112000ED6AE /* PaddingTextField.swift in Sources */,
 				DEE101DE2A1D0112000ED6AE /* ContentError.swift in Sources */,
@@ -486,17 +561,22 @@
 				DEE101D52A1D0112000ED6AE /* Scalable.swift in Sources */,
 				DEE101E52A1D0112000ED6AE /* NavigationController.swift in Sources */,
 				DEE101D72A1D0112000ED6AE /* TextAttributes.swift in Sources */,
+				DEB2B2C92A261C3F00C26FC5 /* InformationSeparatorCell.swift in Sources */,
 				DEB2B29F2A25FFCC00C26FC5 /* EasterTask.swift in Sources */,
 				DEE102012A1D0BA6000ED6AE /* SplashViewController.swift in Sources */,
 				DEE102032A1D0BAC000ED6AE /* SplashViewModel.swift in Sources */,
+				DEB2B2D12A264AF600C26FC5 /* InformationFatigueCell.swift in Sources */,
 				DEE101F12A1D0112000ED6AE /* SceneDelegate.swift in Sources */,
 				DEB2B29B2A25FF1E00C26FC5 /* TaskStatus.swift in Sources */,
 				DEB2B2B72A260CCC00C26FC5 /* InputNameView.swift in Sources */,
 				DEE101EB2A1D0112000ED6AE /* GradientView.swift in Sources */,
+				DEB2B2C22A26191A00C26FC5 /* InformationTableView.swift in Sources */,
 				DEE101DB2A1D0112000ED6AE /* Fonts.swift in Sources */,
+				DEB2B2CF2A2642E100C26FC5 /* InformationTextCell.swift in Sources */,
 				DEB2B2952A25FA2400C26FC5 /* Profile.swift in Sources */,
 				DEE101CD2A1D0112000ED6AE /* Collection+Extension.swift in Sources */,
 				DEE102052A1D0BB7000ED6AE /* SplashView.swift in Sources */,
+				DEB2B2BC2A26173F00C26FC5 /* InformationViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

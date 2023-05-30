@@ -21,5 +21,9 @@ struct Fonts {
         static func regular(size: CGFloat) -> UIFont {
             UIFont(name: "Ubuntu-Regular", size: size)!
         }
+        
+        static func light(size: CGFloat) -> UIFont {
+            UIFont(name: "Ubuntu-Light", size: size)!
+        }
     }
 }

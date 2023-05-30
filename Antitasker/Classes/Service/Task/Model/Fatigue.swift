@@ -26,7 +26,7 @@ enum Fatigue: Codable, Hashable {
         case .maternityLeave:
             return (from: 341, to: 400)
         case .bali:
-            return (from: 400, to: Int.max)
+            return (from: 400, to: 1000)
         }
     }
 }
