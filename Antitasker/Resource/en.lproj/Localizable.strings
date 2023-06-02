@@ -32,3 +32,6 @@
 "Information.Fatigue.WhenIsHoliday" = "😩 когда там отпуск";
 "Information.Fatigue.MaternityLeave" = "🫄 можно мне в декретный отпуск?";
 "Information.Fatigue.Bali" = "🏖 я увольняюсь и сваливаю на Бали";
+
+// MARK: Scheduler
+"Scheduler.Title" = "Планировщик";

@@ -57,7 +57,10 @@ private extension SplashViewController {
             let vc = InformationViewController.make()
             present(vc, animated: true)
         case .main:
-            print("go to main")
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+                let vc = NavigationController(rootViewController: SchedulerViewController.make())
+                UIApplication.shared.keyWindow?.rootViewController = vc
+            }
         }
     }
 }

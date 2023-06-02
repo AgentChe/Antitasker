@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		5933080A439D3937920B60D4 /* Pods_Antitasker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60490A3F77E79DF65973264C /* Pods_Antitasker.framework */; };
+		DE9059392A2A2DE40027037E /* SchedulerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE9059382A2A2DE40027037E /* SchedulerViewController.swift */; };
+		DE90593B2A2A2DE90027037E /* SchedulerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE90593A2A2A2DE90027037E /* SchedulerViewModel.swift */; };
+		DE90593D2A2A2DEE0027037E /* SchedulerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE90593C2A2A2DEE0027037E /* SchedulerView.swift */; };
+		DE90593F2A2A2FE30027037E /* UIApplication+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE90593E2A2A2FE30027037E /* UIApplication+Extension.swift */; };
 		DEB2B2952A25FA2400C26FC5 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEB2B2942A25FA2400C26FC5 /* Profile.swift */; };
 		DEB2B2972A25FB0300C26FC5 /* ProfileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEB2B2962A25FB0300C26FC5 /* ProfileManager.swift */; };
 		DEB2B29B2A25FF1E00C26FC5 /* TaskStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEB2B29A2A25FF1E00C26FC5 /* TaskStatus.swift */; };
@@ -63,6 +67,10 @@
 /* Begin PBXFileReference section */
 		60490A3F77E79DF65973264C /* Pods_Antitasker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Antitasker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8828480017C64E5EB4E02EC2 /* Pods-Antitasker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Antitasker.release.xcconfig"; path = "Target Support Files/Pods-Antitasker/Pods-Antitasker.release.xcconfig"; sourceTree = "<group>"; };
+		DE9059382A2A2DE40027037E /* SchedulerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchedulerViewController.swift; sourceTree = "<group>"; };
+		DE90593A2A2A2DE90027037E /* SchedulerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchedulerViewModel.swift; sourceTree = "<group>"; };
+		DE90593C2A2A2DEE0027037E /* SchedulerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchedulerView.swift; sourceTree = "<group>"; };
+		DE90593E2A2A2FE30027037E /* UIApplication+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIApplication+Extension.swift"; sourceTree = "<group>"; };
 		DEB2B2942A25FA2400C26FC5 /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
 		DEB2B2962A25FB0300C26FC5 /* ProfileManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileManager.swift; sourceTree = "<group>"; };
 		DEB2B29A2A25FF1E00C26FC5 /* TaskStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskStatus.swift; sourceTree = "<group>"; };
@@ -137,6 +145,16 @@
 				8828480017C64E5EB4E02EC2 /* Pods-Antitasker.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		DE9059372A2A2DDA0027037E /* Scheduler */ = {
+			isa = PBXGroup;
+			children = (
+				DE9059382A2A2DE40027037E /* SchedulerViewController.swift */,
+				DE90593A2A2A2DE90027037E /* SchedulerViewModel.swift */,
+				DE90593C2A2A2DEE0027037E /* SchedulerView.swift */,
+			);
+			path = Scheduler;
 			sourceTree = "<group>";
 		};
 		DEB2B2922A25FA1100C26FC5 /* Profile */ = {
@@ -308,6 +326,7 @@
 				DEE101952A1D0112000ED6AE /* ObservableAndSingle+Extension.swift */,
 				DEE101962A1D0112000ED6AE /* String+Extension.swift */,
 				DEE101972A1D0112000ED6AE /* UIViewRxExtension.swift */,
+				DE90593E2A2A2FE30027037E /* UIApplication+Extension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -392,6 +411,7 @@
 		DEE101FE2A1D0B8F000ED6AE /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				DE9059372A2A2DDA0027037E /* Scheduler */,
 				DEE101FF2A1D0B9C000ED6AE /* Splash */,
 			);
 			path = Presentation;
@@ -540,6 +560,7 @@
 				DEE101CB2A1D0112000ED6AE /* UIColor+Extension.swift in Sources */,
 				DEE101CF2A1D0112000ED6AE /* String+Extension.swift in Sources */,
 				DEE101E22A1D0112000ED6AE /* RxActivityIndicator.swift in Sources */,
+				DE9059392A2A2DE40027037E /* SchedulerViewController.swift in Sources */,
 				DEE101D02A1D0112000ED6AE /* UIViewRxExtension.swift in Sources */,
 				DEB2B2AD2A2607CD00C26FC5 /* PaddingLabel.swift in Sources */,
 				DEE101ED2A1D0112000ED6AE /* AppDelegate.swift in Sources */,
@@ -551,14 +572,17 @@
 				DEB2B2A42A26029C00C26FC5 /* Fatigue.swift in Sources */,
 				DEB2B2BA2A26173800C26FC5 /* InformationView.swift in Sources */,
 				DEB2B2BE2A26174500C26FC5 /* InformationViewModel.swift in Sources */,
+				DE90593D2A2A2DEE0027037E /* SchedulerView.swift in Sources */,
 				DEB2B2A62A26049F00C26FC5 /* Punishment.swift in Sources */,
 				DEE101E42A1D0112000ED6AE /* NavigationControllerSettings.swift in Sources */,
+				DE90593B2A2A2DE90027037E /* SchedulerViewModel.swift in Sources */,
 				DEB2B2CB2A261D2600C26FC5 /* InformationSectionCell.swift in Sources */,
 				DEE101CE2A1D0112000ED6AE /* ObservableAndSingle+Extension.swift in Sources */,
 				DEE101E82A1D0112000ED6AE /* PaddingTextField.swift in Sources */,
 				DEE101DE2A1D0112000ED6AE /* ContentError.swift in Sources */,
 				DEB2B29D2A25FF3F00C26FC5 /* Task.swift in Sources */,
 				DEE101D52A1D0112000ED6AE /* Scalable.swift in Sources */,
+				DE90593F2A2A2FE30027037E /* UIApplication+Extension.swift in Sources */,
 				DEE101E52A1D0112000ED6AE /* NavigationController.swift in Sources */,
 				DEE101D72A1D0112000ED6AE /* TextAttributes.swift in Sources */,
 				DEB2B2C92A261C3F00C26FC5 /* InformationSeparatorCell.swift in Sources */,

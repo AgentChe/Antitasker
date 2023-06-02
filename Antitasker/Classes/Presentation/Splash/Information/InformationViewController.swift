@@ -68,7 +68,8 @@ private extension InformationViewController {
     func route(_ route: InformationViewModel.Route) {
         switch route {
         case .main:
-            print("go to main")
+            let vc = NavigationController(rootViewController: SchedulerViewController.make())
+            UIApplication.shared.keyWindow?.rootViewController = vc
         }
     }
 }
