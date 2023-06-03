@@ -25,8 +25,14 @@ final class SchedulerViewController: UIViewController {
         super.viewDidLoad()
         
         let output = viewModel.configure(input: SchedulerViewModel.Input(
-            
+            didTapCreateTask: addButton.rx.tap.asSignal()
         ))
+        
+        output.route
+            .drive(Binder(self) { base, route in
+                base.route(route)
+            })
+            .disposed(by: disposeBag)
         
         inputAddButton()
     }
@@ -54,5 +60,13 @@ private extension SchedulerViewController {
         addButton.setImage(UIImage(named: "Scheduler.Add"), for: .normal)
         
         navigationItem.rightBarButtonItem = item
+    }
+    
+    func route(_ route: SchedulerViewModel.Route) {
+        switch route {
+        case .createTask:
+            let vc = CreateTaskViewController.make()
+            navigationController?.pushViewController(vc, animated: true)
+        }
     }
 }

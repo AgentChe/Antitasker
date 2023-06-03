@@ -35,3 +35,17 @@
 
 // MARK: Scheduler
 "Scheduler.Title" = "Планировщик";
+
+// MARK: CreateTask
+"CreateTask.Title" = "Добавить задачу";
+"CreateTask.Name.Title" = "Название задачи";
+"CreateTask.Name.Placeholder" = "Напишите название задачи...";
+"CreateTask.Description.Title" = "Описание";
+"CreateTask.Description.Placeholder" = "Опишите Вашу задачу...";
+"CreateTask.DateTime.Title" = "Дата и время";
+"CreateTask.DateTime.Placeholder" = "Укажите дату и время...";
+"CreateTask.Button" = "Готово";
+
+// MARK: Discontent
+"Discontent.Text" = "%@, у тебя новая задача… Может, хватит? Ты можешь погулять на улице, заняться спортом, увидеться с друзьями. Еще не поздно одуматься.";
+"Discontent.Button" = "Закрыть";
