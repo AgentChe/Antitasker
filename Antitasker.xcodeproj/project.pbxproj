@@ -11,6 +11,20 @@
 		DE102D612A2AA60900149ECA /* TaskMediator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE102D602A2AA60900149ECA /* TaskMediator.swift */; };
 		DE102D642A2B140A00149ECA /* DiscontentAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE102D632A2B140900149ECA /* DiscontentAlertView.swift */; };
 		DE102D662A2B141000149ECA /* DiscontentAlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE102D652A2B141000149ECA /* DiscontentAlertViewController.swift */; };
+		DE102D842A2DF1C100149ECA /* TaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE102D832A2DF1C100149ECA /* TaskView.swift */; };
+		DE102D862A2DF1CA00149ECA /* TaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE102D852A2DF1CA00149ECA /* TaskViewController.swift */; };
+		DE102D882A2DF1CF00149ECA /* TaskViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE102D872A2DF1CF00149ECA /* TaskViewModel.swift */; };
+		DE102D8C2A2DF4EA00149ECA /* TaskTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE102D8B2A2DF4EA00149ECA /* TaskTableView.swift */; };
+		DE102D8E2A2DF4F100149ECA /* TaskTableElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE102D8D2A2DF4F100149ECA /* TaskTableElement.swift */; };
+		DE102D912A2DF4FC00149ECA /* TaskImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE102D902A2DF4FC00149ECA /* TaskImageCell.swift */; };
+		DE102D932A2DF58800149ECA /* TaskAdviceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE102D922A2DF58800149ECA /* TaskAdviceCell.swift */; };
+		DE102D952A2DF59300149ECA /* TaskNameCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE102D942A2DF59300149ECA /* TaskNameCell.swift */; };
+		DE102D972A2DF59D00149ECA /* TaskDescriptionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE102D962A2DF59D00149ECA /* TaskDescriptionCell.swift */; };
+		DE102D992A2DF5AA00149ECA /* TaskDateCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE102D982A2DF5AA00149ECA /* TaskDateCell.swift */; };
+		DE102D9B2A2DF6FD00149ECA /* TaskCompleteCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE102D9A2A2DF6FD00149ECA /* TaskCompleteCell.swift */; };
+		DE102D9D2A2DF71000149ECA /* TaskDeleteCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE102D9C2A2DF71000149ECA /* TaskDeleteCell.swift */; };
+		DE102DA02A2E19D600149ECA /* TaskAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE102D9F2A2E19D600149ECA /* TaskAlertView.swift */; };
+		DE102DA22A2E19DD00149ECA /* TaskAlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE102DA12A2E19DD00149ECA /* TaskAlertViewController.swift */; };
 		DE9059392A2A2DE40027037E /* SchedulerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE9059382A2A2DE40027037E /* SchedulerViewController.swift */; };
 		DE90593B2A2A2DE90027037E /* SchedulerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE90593A2A2A2DE90027037E /* SchedulerViewModel.swift */; };
 		DE90593D2A2A2DEE0027037E /* SchedulerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE90593C2A2A2DEE0027037E /* SchedulerView.swift */; };
@@ -76,6 +90,20 @@
 		DE102D602A2AA60900149ECA /* TaskMediator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskMediator.swift; sourceTree = "<group>"; };
 		DE102D632A2B140900149ECA /* DiscontentAlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscontentAlertView.swift; sourceTree = "<group>"; };
 		DE102D652A2B141000149ECA /* DiscontentAlertViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscontentAlertViewController.swift; sourceTree = "<group>"; };
+		DE102D832A2DF1C100149ECA /* TaskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskView.swift; sourceTree = "<group>"; };
+		DE102D852A2DF1CA00149ECA /* TaskViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskViewController.swift; sourceTree = "<group>"; };
+		DE102D872A2DF1CF00149ECA /* TaskViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskViewModel.swift; sourceTree = "<group>"; };
+		DE102D8B2A2DF4EA00149ECA /* TaskTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskTableView.swift; sourceTree = "<group>"; };
+		DE102D8D2A2DF4F100149ECA /* TaskTableElement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskTableElement.swift; sourceTree = "<group>"; };
+		DE102D902A2DF4FC00149ECA /* TaskImageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskImageCell.swift; sourceTree = "<group>"; };
+		DE102D922A2DF58800149ECA /* TaskAdviceCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskAdviceCell.swift; sourceTree = "<group>"; };
+		DE102D942A2DF59300149ECA /* TaskNameCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskNameCell.swift; sourceTree = "<group>"; };
+		DE102D962A2DF59D00149ECA /* TaskDescriptionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskDescriptionCell.swift; sourceTree = "<group>"; };
+		DE102D982A2DF5AA00149ECA /* TaskDateCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskDateCell.swift; sourceTree = "<group>"; };
+		DE102D9A2A2DF6FD00149ECA /* TaskCompleteCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskCompleteCell.swift; sourceTree = "<group>"; };
+		DE102D9C2A2DF71000149ECA /* TaskDeleteCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskDeleteCell.swift; sourceTree = "<group>"; };
+		DE102D9F2A2E19D600149ECA /* TaskAlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskAlertView.swift; sourceTree = "<group>"; };
+		DE102DA12A2E19DD00149ECA /* TaskAlertViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskAlertViewController.swift; sourceTree = "<group>"; };
 		DE9059382A2A2DE40027037E /* SchedulerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchedulerViewController.swift; sourceTree = "<group>"; };
 		DE90593A2A2A2DE90027037E /* SchedulerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchedulerViewModel.swift; sourceTree = "<group>"; };
 		DE90593C2A2A2DEE0027037E /* SchedulerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchedulerView.swift; sourceTree = "<group>"; };
@@ -168,6 +196,59 @@
 			path = Alert;
 			sourceTree = "<group>";
 		};
+		DE102D822A2DF1B700149ECA /* Task */ = {
+			isa = PBXGroup;
+			children = (
+				DE102D9E2A2E19AA00149ECA /* Alert */,
+				DE102D892A2DF4DC00149ECA /* Views */,
+				DE102D852A2DF1CA00149ECA /* TaskViewController.swift */,
+				DE102D872A2DF1CF00149ECA /* TaskViewModel.swift */,
+				DE102D832A2DF1C100149ECA /* TaskView.swift */,
+			);
+			path = Task;
+			sourceTree = "<group>";
+		};
+		DE102D892A2DF4DC00149ECA /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DE102D8A2A2DF4E000149ECA /* TableView */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		DE102D8A2A2DF4E000149ECA /* TableView */ = {
+			isa = PBXGroup;
+			children = (
+				DE102D8F2A2DF4F500149ECA /* Cells */,
+				DE102D8B2A2DF4EA00149ECA /* TaskTableView.swift */,
+				DE102D8D2A2DF4F100149ECA /* TaskTableElement.swift */,
+			);
+			path = TableView;
+			sourceTree = "<group>";
+		};
+		DE102D8F2A2DF4F500149ECA /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				DE102D902A2DF4FC00149ECA /* TaskImageCell.swift */,
+				DE102D922A2DF58800149ECA /* TaskAdviceCell.swift */,
+				DE102D942A2DF59300149ECA /* TaskNameCell.swift */,
+				DE102D962A2DF59D00149ECA /* TaskDescriptionCell.swift */,
+				DE102D982A2DF5AA00149ECA /* TaskDateCell.swift */,
+				DE102D9A2A2DF6FD00149ECA /* TaskCompleteCell.swift */,
+				DE102D9C2A2DF71000149ECA /* TaskDeleteCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		DE102D9E2A2E19AA00149ECA /* Alert */ = {
+			isa = PBXGroup;
+			children = (
+				DE102D9F2A2E19D600149ECA /* TaskAlertView.swift */,
+				DE102DA12A2E19DD00149ECA /* TaskAlertViewController.swift */,
+			);
+			path = Alert;
+			sourceTree = "<group>";
+		};
 		DE9059372A2A2DDA0027037E /* Scheduler */ = {
 			isa = PBXGroup;
 			children = (
@@ -181,6 +262,7 @@
 		DE9059402A2A321D0027037E /* Task */ = {
 			isa = PBXGroup;
 			children = (
+				DE102D822A2DF1B700149ECA /* Task */,
 				DE9059412A2A32210027037E /* CreateTask */,
 			);
 			path = Task;
@@ -602,6 +684,7 @@
 				DEE101CB2A1D0112000ED6AE /* UIColor+Extension.swift in Sources */,
 				DEE101CF2A1D0112000ED6AE /* String+Extension.swift in Sources */,
 				DEE101E22A1D0112000ED6AE /* RxActivityIndicator.swift in Sources */,
+				DE102D9B2A2DF6FD00149ECA /* TaskCompleteCell.swift in Sources */,
 				DE9059392A2A2DE40027037E /* SchedulerViewController.swift in Sources */,
 				DEE101D02A1D0112000ED6AE /* UIViewRxExtension.swift in Sources */,
 				DEB2B2AD2A2607CD00C26FC5 /* PaddingLabel.swift in Sources */,
@@ -611,6 +694,7 @@
 				DEB2B2C72A26193800C26FC5 /* InformationImageCell.swift in Sources */,
 				DE9059452A2A32790027037E /* CreateTaskViewModel.swift in Sources */,
 				DEB2B2C42A26192100C26FC5 /* InformationTableElement.swift in Sources */,
+				DE102D8C2A2DF4EA00149ECA /* TaskTableView.swift in Sources */,
 				DEE101D82A1D0112000ED6AE /* ScreenSize.swift in Sources */,
 				DEB2B2CD2A26221100C26FC5 /* InformationButtonCell.swift in Sources */,
 				DEB2B2A42A26029C00C26FC5 /* Fatigue.swift in Sources */,
@@ -618,17 +702,22 @@
 				DEB2B2BE2A26174500C26FC5 /* InformationViewModel.swift in Sources */,
 				DE90593D2A2A2DEE0027037E /* SchedulerView.swift in Sources */,
 				DEB2B2A62A26049F00C26FC5 /* Punishment.swift in Sources */,
+				DE102D972A2DF59D00149ECA /* TaskDescriptionCell.swift in Sources */,
 				DEE101E42A1D0112000ED6AE /* NavigationControllerSettings.swift in Sources */,
 				DE90593B2A2A2DE90027037E /* SchedulerViewModel.swift in Sources */,
 				DEB2B2CB2A261D2600C26FC5 /* InformationSectionCell.swift in Sources */,
 				DEE101CE2A1D0112000ED6AE /* ObservableAndSingle+Extension.swift in Sources */,
+				DE102D912A2DF4FC00149ECA /* TaskImageCell.swift in Sources */,
 				DEE101E82A1D0112000ED6AE /* PaddingTextField.swift in Sources */,
+				DE102D842A2DF1C100149ECA /* TaskView.swift in Sources */,
 				DEE101DE2A1D0112000ED6AE /* ContentError.swift in Sources */,
+				DE102D882A2DF1CF00149ECA /* TaskViewModel.swift in Sources */,
 				DEB2B29D2A25FF3F00C26FC5 /* Task.swift in Sources */,
 				DEE101D52A1D0112000ED6AE /* Scalable.swift in Sources */,
 				DE90593F2A2A2FE30027037E /* UIApplication+Extension.swift in Sources */,
 				DEE101E52A1D0112000ED6AE /* NavigationController.swift in Sources */,
 				DE9059472A2A327D0027037E /* CreateTaskView.swift in Sources */,
+				DE102D8E2A2DF4F100149ECA /* TaskTableElement.swift in Sources */,
 				DE102D612A2AA60900149ECA /* TaskMediator.swift in Sources */,
 				DEE101D72A1D0112000ED6AE /* TextAttributes.swift in Sources */,
 				DEB2B2C92A261C3F00C26FC5 /* InformationSeparatorCell.swift in Sources */,
@@ -637,17 +726,24 @@
 				DEE102032A1D0BAC000ED6AE /* SplashViewModel.swift in Sources */,
 				DEB2B2D12A264AF600C26FC5 /* InformationFatigueCell.swift in Sources */,
 				DEE101F12A1D0112000ED6AE /* SceneDelegate.swift in Sources */,
+				DE102D862A2DF1CA00149ECA /* TaskViewController.swift in Sources */,
+				DE102DA22A2E19DD00149ECA /* TaskAlertViewController.swift in Sources */,
 				DEB2B29B2A25FF1E00C26FC5 /* TaskStatus.swift in Sources */,
 				DEB2B2B72A260CCC00C26FC5 /* InputNameView.swift in Sources */,
 				DEE101EB2A1D0112000ED6AE /* GradientView.swift in Sources */,
+				DE102D952A2DF59300149ECA /* TaskNameCell.swift in Sources */,
 				DEB2B2C22A26191A00C26FC5 /* InformationTableView.swift in Sources */,
 				DE102D662A2B141000149ECA /* DiscontentAlertViewController.swift in Sources */,
 				DEE101DB2A1D0112000ED6AE /* Fonts.swift in Sources */,
+				DE102DA02A2E19D600149ECA /* TaskAlertView.swift in Sources */,
 				DEB2B2CF2A2642E100C26FC5 /* InformationTextCell.swift in Sources */,
+				DE102D992A2DF5AA00149ECA /* TaskDateCell.swift in Sources */,
 				DEB2B2952A25FA2400C26FC5 /* Profile.swift in Sources */,
 				DEE101CD2A1D0112000ED6AE /* Collection+Extension.swift in Sources */,
 				DEE102052A1D0BB7000ED6AE /* SplashView.swift in Sources */,
+				DE102D9D2A2DF71000149ECA /* TaskDeleteCell.swift in Sources */,
 				DEB2B2BC2A26173F00C26FC5 /* InformationViewController.swift in Sources */,
+				DE102D932A2DF58800149ECA /* TaskAdviceCell.swift in Sources */,
 				DE9059432A2A322E0027037E /* CreateTaskViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

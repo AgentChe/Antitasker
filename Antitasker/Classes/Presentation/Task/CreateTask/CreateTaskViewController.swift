@@ -22,7 +22,7 @@ final class CreateTaskViewController: UIViewController {
     
     private lazy var dateFormatter: DateFormatter = {
         let formatter = DateFormatter()
-        formatter.dateFormat = "dd.MM.yyyy HH:mm"
+        formatter.dateFormat = "dd.MM.yyyy"
         formatter.locale = Locale.current
         return formatter
     }()

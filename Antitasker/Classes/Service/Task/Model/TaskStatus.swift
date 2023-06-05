@@ -6,5 +6,5 @@
 //
 
 enum TaskStatus: Codable, Hashable {
-    case open, done
+    case open, completed
 }

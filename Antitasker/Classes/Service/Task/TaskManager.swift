@@ -14,6 +14,8 @@ protocol TaskManagerProtocol {
         dateTime: Date
     ) -> Single<Task>
     func obtainTasks() -> Single<[Task]>
+    func delete(id: String) -> Single<Void>
+    func complete(id: String) -> Single<Void>
 }
 
 final class TaskManager {
@@ -72,9 +74,56 @@ extension TaskManager: TaskManagerProtocol {
             return Disposables.create()
         }
     }
-}
-
-// MARK: Private
-private extension TaskManager {
     
+    func delete(id: String) -> Single<Void> {
+        obtainTasks()
+            .flatMap { tasks -> Single<Void> in
+                Single<Void>.create { event in
+                    var result = tasks
+                    result.removeAll(where: { $0.id == id })
+                    
+                    if let data = try? JSONEncoder().encode(result) {
+                        UserDefaults.standard.set(data, forKey: Constants.tasksKey)
+                    }
+                    
+                    event(.success(Void()))
+                    
+                    TaskMediator.shared.taskDeleted(id: id)
+                    
+                    return Disposables.create()
+                }
+            }
+    }
+    
+    func complete(id: String) -> Single<Void> {
+        obtainTasks()
+            .flatMap { tasks -> Single<Void> in
+                Single<Void>.create { event in
+                    var result = tasks
+                    
+                    if let index = result.firstIndex(where: { $0.id == id }) {
+                        let task = result[index]
+                        
+                        let newTask = Task(
+                            id: task.id,
+                            name: task.name,
+                            description: task.description,
+                            date: task.date,
+                            state: .completed
+                        )
+                        result[index] = newTask
+                        
+                        if let data = try? JSONEncoder().encode(result) {
+                            UserDefaults.standard.set(data, forKey: Constants.tasksKey)
+                        }
+                    }
+                    
+                    event(.success(Void()))
+                    
+                    TaskMediator.shared.taskCompleted(id: id)
+                    
+                    return Disposables.create()
+                }
+            }
+    }
 }

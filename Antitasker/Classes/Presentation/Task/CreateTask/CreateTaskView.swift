@@ -196,7 +196,7 @@ private extension CreateTaskView {
     func makeDatePicker() -> UIDatePicker {
         let view = UIDatePicker()
         view.preferredDatePickerStyle = .wheels
-        view.datePickerMode = .dateAndTime
+        view.datePickerMode = .date
         view.timeZone = TimeZone.current
         view.minimumDate = Date()
         return view
