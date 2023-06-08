@@ -48,6 +48,8 @@ extension ProfileManager: ProfileManagerProtocol {
                     
                     event(.success(Void()))
                     
+                    ProfileMediator.shared.profileChanged()
+                    
                     return Disposables.create()
                 }
             }

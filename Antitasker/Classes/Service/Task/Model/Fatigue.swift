@@ -29,4 +29,26 @@ enum Fatigue: Codable, Hashable {
             return (from: 400, to: 1000)
         }
     }
+    
+    init(balls: Int) {
+        let workLikeHorseRange = Fatigue.workLikeHorse.range
+        let ratherWeekendeRange = Fatigue.ratherWeekend.range
+        let eyesOnClockRange = Fatigue.eyesOnClock.range
+        let whenIsHolidayRange = Fatigue.whenIsHoliday.range
+        let maternityLeaveRange = Fatigue.maternityLeave.range
+        
+        if balls >= workLikeHorseRange.from && balls <= workLikeHorseRange.to {
+            self = .workLikeHorse
+        } else if balls >= ratherWeekendeRange.from && balls <= ratherWeekendeRange.to {
+            self = .ratherWeekend
+        } else if balls >= eyesOnClockRange.from && balls <= eyesOnClockRange.to {
+            self = .eyesOnClock
+        } else if balls >= whenIsHolidayRange.from && balls <= whenIsHolidayRange.to {
+            self = .whenIsHoliday
+        } else if balls >= maternityLeaveRange.from && balls <= maternityLeaveRange.to {
+            self = .maternityLeave
+        } else {
+            self = .bali
+        }
+    }
 }

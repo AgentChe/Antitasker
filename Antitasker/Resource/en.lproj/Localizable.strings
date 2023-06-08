@@ -35,6 +35,23 @@
 
 // MARK: Scheduler
 "Scheduler.Title" = "Планировщик";
+"Scheduler.Header.Hello" = "Привет, %@";
+"Scheduler.Header.Ball" = "%i балл";
+"Scheduler.Header.Balls" = "%i балла";
+"Scheduler.Header.ManyBalls" = "%i баллов";
+"Scheduler.Header.Level" = "Твой уровень:";
+"Scheduler.Header.Tag1" = "Помнишь девушку из кафе? Может, она сейчас там сидит. Иди познакомься.";
+"Scheduler.Header.Tag2" = "Это тебе сообщение пришло? Иди посмотри и не забудь проверить сторис друзей.";
+"Scheduler.DaysOfWeek.Mo" = "ПН";
+"Scheduler.DaysOfWeek.Tu" = "ВТ";
+"Scheduler.DaysOfWeek.We" = "СР";
+"Scheduler.DaysOfWeek.Th" = "ЧТ";
+"Scheduler.DaysOfWeek.Fr" = "ПТ";
+"Scheduler.DaysOfWeek.Sa" = "СБ";
+"Scheduler.DaysOfWeek.Su" = "ВС";
+"Scheduler.Empty.Tag1" = "Нет задач и не планируй!";
+"Scheduler.Empty.Tag2" = "Иди лучше кино посмотри..\nПосоветовать мое любимое?";
+"Scheduler.EasterTask.Friends" = "Заказать пиццу, позвонить друзьям, включить приставку и играть до самого утра. Не парься ни о чем, сейчас это самое важное.";
 
 // MARK: CreateTask
 "CreateTask.Title" = "Добавить задачу";

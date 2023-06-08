@@ -7,6 +7,8 @@ source 'https://github.com/CocoaPods/Specs.git'
 target 'Antitasker' do
   pod 'RxSwift'
   pod 'RxCocoa'
+  
+  pod 'JTAppleCalendar'
 end
 
 post_install do |installer|

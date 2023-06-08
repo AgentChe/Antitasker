@@ -69,6 +69,8 @@ final class CreateTaskViewController: UIViewController {
         mainView.nameTextField.addTarget(self, action: #selector(textEditing(sender:)), for: .editingChanged)
         mainView.descriptionTextField.addTarget(self, action: #selector(textEditing(sender:)), for: .editingChanged)
         mainView.datePicker.addTarget(self, action: #selector(dateTimeChanged), for: .valueChanged)
+        
+        addHideKeyboardAction()
     }
 }
 
@@ -120,5 +122,16 @@ private extension CreateTaskViewController {
             }
             present(vc, animated: false)
         }
+    }
+    
+    func addHideKeyboardAction() {
+        let tapGesture = UITapGestureRecognizer()
+        tapGesture.rx.event
+            .mapToVoid()
+            .bind(to: mainView.rx.hideKeyboardObserver)
+            .disposed(by: disposeBag)
+        
+        mainView.isUserInteractionEnabled = true
+        mainView.addGestureRecognizer(tapGesture)
     }
 }

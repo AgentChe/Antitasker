@@ -69,7 +69,9 @@ private extension CreateTaskViewModel {
                 didInputDate
             )
             .map { name, description, date -> Bool in
-                !name.isEmpty && !description.isEmpty && (date >= Date())
+                let calendar = Calendar.current
+                let validDate = (calendar.compare(date, to: Date(), toGranularity: .day) == .orderedDescending) || calendar.isDateInToday(date)
+                return !name.isEmpty && !description.isEmpty && validDate
             }
             .startWith(false)
             .asDriver(onErrorDriveWith: .never())

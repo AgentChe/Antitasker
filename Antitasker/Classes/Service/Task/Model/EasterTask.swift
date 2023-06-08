@@ -7,4 +7,10 @@
 
 enum EasterTask: Codable, Hashable {
     case friends
+    
+    static var all: [EasterTask] {
+        [
+            .friends
+        ]
+    }
 }

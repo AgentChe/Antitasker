@@ -25,8 +25,16 @@ final class SchedulerViewController: UIViewController {
         super.viewDidLoad()
         
         let output = viewModel.configure(input: SchedulerViewModel.Input(
-            didTapCreateTask: addButton.rx.tap.asSignal()
+            didTapCreateTask: addButton.rx.tap.asSignal(),
+            didSelectDate: mainView.tableView.didSelectDate,
+            didSelectTask: mainView.tableView.didSelectTask
         ))
+        
+        output.elements
+            .drive(Binder(mainView.tableView) { base, elements in
+                base.setup(elements: elements)
+            })
+            .disposed(by: disposeBag)
         
         output.route
             .drive(Binder(self) { base, route in
@@ -66,6 +74,9 @@ private extension SchedulerViewController {
         switch route {
         case .createTask:
             let vc = CreateTaskViewController.make()
+            navigationController?.pushViewController(vc, animated: true)
+        case .task(let task):
+            let vc = TaskViewController.make(task: task)
             navigationController?.pushViewController(vc, animated: true)
         }
     }
