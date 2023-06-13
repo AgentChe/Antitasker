@@ -107,6 +107,7 @@
 /* Begin PBXFileReference section */
 		60490A3F77E79DF65973264C /* Pods_Antitasker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Antitasker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8828480017C64E5EB4E02EC2 /* Pods-Antitasker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Antitasker.release.xcconfig"; path = "Target Support Files/Pods-Antitasker/Pods-Antitasker.release.xcconfig"; sourceTree = "<group>"; };
+		DE02C7EE2A38A11C008D4A69 /* Antitasker.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Antitasker.entitlements; sourceTree = "<group>"; };
 		DE102D602A2AA60900149ECA /* TaskMediator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskMediator.swift; sourceTree = "<group>"; };
 		DE102D632A2B140900149ECA /* DiscontentAlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscontentAlertView.swift; sourceTree = "<group>"; };
 		DE102D652A2B141000149ECA /* DiscontentAlertViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscontentAlertViewController.swift; sourceTree = "<group>"; };
@@ -531,6 +532,7 @@
 		DEE101772A1D001A000ED6AE /* Antitasker */ = {
 			isa = PBXGroup;
 			children = (
+				DE02C7EE2A38A11C008D4A69 /* Antitasker.entitlements */,
 				DEE1018D2A1D004A000ED6AE /* Classes */,
 				DEE1018C2A1D0043000ED6AE /* Resource */,
 			);
@@ -1042,8 +1044,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_ENTITLEMENTS = Antitasker/Antitasker.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = M73NH26C3Q;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Antitasker/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -1056,8 +1062,10 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0.0;
-				PRODUCT_BUNDLE_IDENTIFIER = wed.Antitasker;
+				PRODUCT_BUNDLE_IDENTIFIER = com.whiteapps.antitasker;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "Antitasker Development";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
@@ -1073,8 +1081,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_ENTITLEMENTS = Antitasker/Antitasker.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = M73NH26C3Q;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Antitasker/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -1087,8 +1099,10 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0.0;
-				PRODUCT_BUNDLE_IDENTIFIER = wed.Antitasker;
+				PRODUCT_BUNDLE_IDENTIFIER = com.whiteapps.antitasker;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "Antitasker AppStore";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
