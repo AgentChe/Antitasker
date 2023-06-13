@@ -19,6 +19,8 @@ final class SchedulerHeaderCell: UITableViewCell {
     lazy var largeCircleView = makeLargeCircleView()
     lazy var smallCircleView = makeSmallCircleView()
     
+    private lazy var percentHeightConstrant = NSLayoutConstraint()
+    
     private lazy var nameAttrs = TextAttributes()
         .textColor(UIColor(integralRed: 29, green: 29, blue: 29))
         .font(Fonts.Ubuntu.medium(size: 24.scale))
@@ -90,6 +92,13 @@ extension SchedulerHeaderCell {
         fatigueValueLabel.attributedText = fatigue.attributed(with: fatigueAttrs)
         
         tagLabel.attributedText = element.tag.attributed(with: tagAttrs)
+        
+        let percentHeight = 205.scale / CGFloat(100) * CGFloat(element.fatiguePercent)
+        percentHeightConstrant.isActive = false
+        percentHeightConstrant.constant = min(205.scale, percentHeight)
+        percentHeightConstrant.isActive = true
+        
+        layoutIfNeeded()
     }
 }
 
@@ -149,6 +158,14 @@ private extension SchedulerHeaderCell {
             percentBackgroundView.heightAnchor.constraint(equalToConstant: 205.scale),
             percentBackgroundView.topAnchor.constraint(equalTo: contentView.topAnchor, constant: 24.scale),
             percentBackgroundView.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -16.scale)
+        ])
+        
+        percentHeightConstrant = percentView.heightAnchor.constraint(equalToConstant: 0)
+        NSLayoutConstraint.activate([
+            percentView.widthAnchor.constraint(equalToConstant: 96.scale),
+            percentView.bottomAnchor.constraint(equalTo: percentBackgroundView.bottomAnchor),
+            percentView.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -16.scale),
+            percentHeightConstrant
         ])
         
         NSLayoutConstraint.activate([

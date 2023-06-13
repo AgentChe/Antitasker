@@ -113,7 +113,7 @@ private extension SchedulerViewModel {
                 let fatigue = Fatigue(balls: fatigueBalls)
                 
                 let fatigueRange = fatigue.range
-                let fatiguePercent = (fatigueBalls - fatigueRange.from) / (fatigueRange.to - fatigueRange.from) * 100
+                let fatiguePercent = Float(fatigueBalls - fatigueRange.from) / Float(fatigueRange.to - fatigueRange.from) * 100
                 
                 let header = SchedulerHeaderElement(
                     name: profile.name,

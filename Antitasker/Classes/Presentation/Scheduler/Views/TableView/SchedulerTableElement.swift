@@ -18,6 +18,6 @@ struct SchedulerHeaderElement {
     let name: String
     let fatigueBalls: Int
     let fatigue: Fatigue
-    let fatiguePercent: Int
+    let fatiguePercent: Float
     let tag: String
 }

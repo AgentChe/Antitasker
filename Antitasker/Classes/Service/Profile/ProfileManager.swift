@@ -54,4 +54,26 @@ extension ProfileManager: ProfileManagerProtocol {
                 }
             }
     }
+    
+    func add(fatigueBalls: Int) -> Single<Void> {
+        obtainProfile()
+            .flatMap { profile -> Single<Void> in
+                Single<Void>.create { event in
+                    var balls = profile?.fatigueBalls ?? 0
+                    balls += fatigueBalls
+                    
+                    let profile = Profile(name: profile?.name ?? "", fatigueBalls: balls)
+                    
+                    if let data = try? JSONEncoder().encode(profile) {
+                        UserDefaults.standard.set(data, forKey: Constants.profileKey)
+                    }
+                    
+                    event(.success(Void()))
+                    
+                    ProfileMediator.shared.profileChanged()
+                    
+                    return Disposables.create()
+                }
+            }
+    }
 }

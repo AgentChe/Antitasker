@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		5933080A439D3937920B60D4 /* Pods_Antitasker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60490A3F77E79DF65973264C /* Pods_Antitasker.framework */; };
+		DE02C7F02A38AAA2008D4A69 /* ProfileObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE02C7EF2A38AAA2008D4A69 /* ProfileObserver.swift */; };
 		DE102D612A2AA60900149ECA /* TaskMediator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE102D602A2AA60900149ECA /* TaskMediator.swift */; };
 		DE102D642A2B140A00149ECA /* DiscontentAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE102D632A2B140900149ECA /* DiscontentAlertView.swift */; };
 		DE102D662A2B141000149ECA /* DiscontentAlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE102D652A2B141000149ECA /* DiscontentAlertViewController.swift */; };
@@ -108,6 +109,7 @@
 		60490A3F77E79DF65973264C /* Pods_Antitasker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Antitasker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8828480017C64E5EB4E02EC2 /* Pods-Antitasker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Antitasker.release.xcconfig"; path = "Target Support Files/Pods-Antitasker/Pods-Antitasker.release.xcconfig"; sourceTree = "<group>"; };
 		DE02C7EE2A38A11C008D4A69 /* Antitasker.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Antitasker.entitlements; sourceTree = "<group>"; };
+		DE02C7EF2A38AAA2008D4A69 /* ProfileObserver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileObserver.swift; sourceTree = "<group>"; };
 		DE102D602A2AA60900149ECA /* TaskMediator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskMediator.swift; sourceTree = "<group>"; };
 		DE102D632A2B140900149ECA /* DiscontentAlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscontentAlertView.swift; sourceTree = "<group>"; };
 		DE102D652A2B141000149ECA /* DiscontentAlertViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscontentAlertViewController.swift; sourceTree = "<group>"; };
@@ -376,6 +378,7 @@
 				DEB2B2932A25FA1C00C26FC5 /* Model */,
 				DEB2B2962A25FB0300C26FC5 /* ProfileManager.swift */,
 				DE102DAC2A2E24D500149ECA /* ProfileMediator.swift */,
+				DE02C7EF2A38AAA2008D4A69 /* ProfileObserver.swift */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -837,6 +840,7 @@
 				DEB2B2CD2A26221100C26FC5 /* InformationButtonCell.swift in Sources */,
 				DEB2B2A42A26029C00C26FC5 /* Fatigue.swift in Sources */,
 				DEB2B2BA2A26173800C26FC5 /* InformationView.swift in Sources */,
+				DE02C7F02A38AAA2008D4A69 /* ProfileObserver.swift in Sources */,
 				DE102DA82A2E1FAA00149ECA /* SchedulerTableElement.swift in Sources */,
 				DEB2B2BE2A26174500C26FC5 /* InformationViewModel.swift in Sources */,
 				DE90593D2A2A2DEE0027037E /* SchedulerView.swift in Sources */,
