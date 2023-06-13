@@ -70,6 +70,15 @@
 		DEB2B2CF2A2642E100C26FC5 /* InformationTextCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEB2B2CE2A2642E100C26FC5 /* InformationTextCell.swift */; };
 		DEB2B2D12A264AF600C26FC5 /* InformationFatigueCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEB2B2D02A264AF600C26FC5 /* InformationFatigueCell.swift */; };
 		DEB2B2D32A264E2900C26FC5 /* Ubuntu-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DEB2B2D22A264E0D00C26FC5 /* Ubuntu-Light.ttf */; };
+		DEDFACEE2A3889DD00268459 /* PunishmentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEDFACED2A3889DD00268459 /* PunishmentViewController.swift */; };
+		DEDFACF02A3889E200268459 /* PunishmentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEDFACEF2A3889E200268459 /* PunishmentViewModel.swift */; };
+		DEDFACF42A3889EE00268459 /* PunishmentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEDFACF32A3889EE00268459 /* PunishmentView.swift */; };
+		DEDFACF82A388EDD00268459 /* PunishmentTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEDFACF72A388EDD00268459 /* PunishmentTableView.swift */; };
+		DEDFACFA2A388EE500268459 /* PunishmentTableElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEDFACF92A388EE500268459 /* PunishmentTableElement.swift */; };
+		DEDFACFD2A388EF400268459 /* PunishmentImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEDFACFC2A388EF400268459 /* PunishmentImageCell.swift */; };
+		DEDFACFF2A388F0C00268459 /* PunishmentFatigueCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEDFACFE2A388F0C00268459 /* PunishmentFatigueCell.swift */; };
+		DEDFAD012A388F2300268459 /* PunishmentDescriptionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEDFAD002A388F2300268459 /* PunishmentDescriptionCell.swift */; };
+		DEDFAD032A388F3E00268459 /* PunishmentDoneCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEDFAD022A388F3E00268459 /* PunishmentDoneCell.swift */; };
 		DEE101822A1D001B000ED6AE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DEE101812A1D001B000ED6AE /* Assets.xcassets */; };
 		DEE101852A1D001B000ED6AE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DEE101832A1D001B000ED6AE /* LaunchScreen.storyboard */; };
 		DEE101CB2A1D0112000ED6AE /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE101922A1D0112000ED6AE /* UIColor+Extension.swift */; };
@@ -157,6 +166,15 @@
 		DEB2B2CE2A2642E100C26FC5 /* InformationTextCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InformationTextCell.swift; sourceTree = "<group>"; };
 		DEB2B2D02A264AF600C26FC5 /* InformationFatigueCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InformationFatigueCell.swift; sourceTree = "<group>"; };
 		DEB2B2D22A264E0D00C26FC5 /* Ubuntu-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Ubuntu-Light.ttf"; sourceTree = "<group>"; };
+		DEDFACED2A3889DD00268459 /* PunishmentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PunishmentViewController.swift; sourceTree = "<group>"; };
+		DEDFACEF2A3889E200268459 /* PunishmentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PunishmentViewModel.swift; sourceTree = "<group>"; };
+		DEDFACF32A3889EE00268459 /* PunishmentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PunishmentView.swift; sourceTree = "<group>"; };
+		DEDFACF72A388EDD00268459 /* PunishmentTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PunishmentTableView.swift; sourceTree = "<group>"; };
+		DEDFACF92A388EE500268459 /* PunishmentTableElement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PunishmentTableElement.swift; sourceTree = "<group>"; };
+		DEDFACFC2A388EF400268459 /* PunishmentImageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PunishmentImageCell.swift; sourceTree = "<group>"; };
+		DEDFACFE2A388F0C00268459 /* PunishmentFatigueCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PunishmentFatigueCell.swift; sourceTree = "<group>"; };
+		DEDFAD002A388F2300268459 /* PunishmentDescriptionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PunishmentDescriptionCell.swift; sourceTree = "<group>"; };
+		DEDFAD022A388F3E00268459 /* PunishmentDoneCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PunishmentDoneCell.swift; sourceTree = "<group>"; };
 		DEE101752A1D001A000ED6AE /* Antitasker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Antitasker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DEE101812A1D001B000ED6AE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DEE101842A1D001B000ED6AE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -452,6 +470,46 @@
 			path = Cells;
 			sourceTree = "<group>";
 		};
+		DEDFACEC2A3889D100268459 /* Punishment */ = {
+			isa = PBXGroup;
+			children = (
+				DEDFACF52A388BBE00268459 /* Views */,
+				DEDFACED2A3889DD00268459 /* PunishmentViewController.swift */,
+				DEDFACEF2A3889E200268459 /* PunishmentViewModel.swift */,
+				DEDFACF32A3889EE00268459 /* PunishmentView.swift */,
+			);
+			path = Punishment;
+			sourceTree = "<group>";
+		};
+		DEDFACF52A388BBE00268459 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DEDFACF62A388EC600268459 /* TableView */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		DEDFACF62A388EC600268459 /* TableView */ = {
+			isa = PBXGroup;
+			children = (
+				DEDFACFB2A388EE900268459 /* Cells */,
+				DEDFACF72A388EDD00268459 /* PunishmentTableView.swift */,
+				DEDFACF92A388EE500268459 /* PunishmentTableElement.swift */,
+			);
+			path = TableView;
+			sourceTree = "<group>";
+		};
+		DEDFACFB2A388EE900268459 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				DEDFACFC2A388EF400268459 /* PunishmentImageCell.swift */,
+				DEDFACFE2A388F0C00268459 /* PunishmentFatigueCell.swift */,
+				DEDFAD002A388F2300268459 /* PunishmentDescriptionCell.swift */,
+				DEDFAD022A388F3E00268459 /* PunishmentDoneCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
 		DEE1016C2A1D001A000ED6AE = {
 			isa = PBXGroup;
 			children = (
@@ -607,6 +665,7 @@
 		DEE101FE2A1D0B8F000ED6AE /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				DEDFACEC2A3889D100268459 /* Punishment */,
 				DE9059402A2A321D0027037E /* Task */,
 				DE9059372A2A2DDA0027037E /* Scheduler */,
 				DEE101FF2A1D0B9C000ED6AE /* Splash */,
@@ -762,14 +821,17 @@
 				DEE101D02A1D0112000ED6AE /* UIViewRxExtension.swift in Sources */,
 				DEB2B2AD2A2607CD00C26FC5 /* PaddingLabel.swift in Sources */,
 				DEE101ED2A1D0112000ED6AE /* AppDelegate.swift in Sources */,
+				DEDFACF02A3889E200268459 /* PunishmentViewModel.swift in Sources */,
 				DE102D642A2B140A00149ECA /* DiscontentAlertView.swift in Sources */,
 				DE102DBF2A30CF7900149ECA /* SchedulerEasterTaskCell.swift in Sources */,
 				DEB2B2972A25FB0300C26FC5 /* ProfileManager.swift in Sources */,
+				DEDFAD012A388F2300268459 /* PunishmentDescriptionCell.swift in Sources */,
 				DEB2B2C72A26193800C26FC5 /* InformationImageCell.swift in Sources */,
 				DE9059452A2A32790027037E /* CreateTaskViewModel.swift in Sources */,
 				DEB2B2C42A26192100C26FC5 /* InformationTableElement.swift in Sources */,
 				DE102D8C2A2DF4EA00149ECA /* TaskTableView.swift in Sources */,
 				DEE101D82A1D0112000ED6AE /* ScreenSize.swift in Sources */,
+				DEDFACF82A388EDD00268459 /* PunishmentTableView.swift in Sources */,
 				DEB2B2CD2A26221100C26FC5 /* InformationButtonCell.swift in Sources */,
 				DEB2B2A42A26029C00C26FC5 /* Fatigue.swift in Sources */,
 				DEB2B2BA2A26173800C26FC5 /* InformationView.swift in Sources */,
@@ -777,7 +839,9 @@
 				DEB2B2BE2A26174500C26FC5 /* InformationViewModel.swift in Sources */,
 				DE90593D2A2A2DEE0027037E /* SchedulerView.swift in Sources */,
 				DEB2B2A62A26049F00C26FC5 /* Punishment.swift in Sources */,
+				DEDFACFF2A388F0C00268459 /* PunishmentFatigueCell.swift in Sources */,
 				DE102D972A2DF59D00149ECA /* TaskDescriptionCell.swift in Sources */,
+				DEDFACEE2A3889DD00268459 /* PunishmentViewController.swift in Sources */,
 				DEE101E42A1D0112000ED6AE /* NavigationControllerSettings.swift in Sources */,
 				DE90593B2A2A2DE90027037E /* SchedulerViewModel.swift in Sources */,
 				DE102DAB2A2E1FCD00149ECA /* SchedulerHeaderCell.swift in Sources */,
@@ -804,6 +868,7 @@
 				DEE102032A1D0BAC000ED6AE /* SplashViewModel.swift in Sources */,
 				DEB2B2D12A264AF600C26FC5 /* InformationFatigueCell.swift in Sources */,
 				DEE101F12A1D0112000ED6AE /* SceneDelegate.swift in Sources */,
+				DEDFACFA2A388EE500268459 /* PunishmentTableElement.swift in Sources */,
 				DE102D862A2DF1CA00149ECA /* TaskViewController.swift in Sources */,
 				DE102DA22A2E19DD00149ECA /* TaskAlertViewController.swift in Sources */,
 				DEB2B29B2A25FF1E00C26FC5 /* TaskStatus.swift in Sources */,
@@ -813,16 +878,19 @@
 				DE102D952A2DF59300149ECA /* TaskNameCell.swift in Sources */,
 				DEB2B2C22A26191A00C26FC5 /* InformationTableView.swift in Sources */,
 				DE102D662A2B141000149ECA /* DiscontentAlertViewController.swift in Sources */,
+				DEDFACFD2A388EF400268459 /* PunishmentImageCell.swift in Sources */,
 				DEE101DB2A1D0112000ED6AE /* Fonts.swift in Sources */,
 				DE102DBD2A30C4A600149ECA /* SchedulerEmptyCell.swift in Sources */,
 				DE102DA02A2E19D600149ECA /* TaskAlertView.swift in Sources */,
 				DE102DB92A2F8C7E00149ECA /* SchedulerDateCell.swift in Sources */,
 				DEB2B2CF2A2642E100C26FC5 /* InformationTextCell.swift in Sources */,
 				DE102D992A2DF5AA00149ECA /* TaskDateCell.swift in Sources */,
+				DEDFAD032A388F3E00268459 /* PunishmentDoneCell.swift in Sources */,
 				DEB2B2952A25FA2400C26FC5 /* Profile.swift in Sources */,
 				DEE101CD2A1D0112000ED6AE /* Collection+Extension.swift in Sources */,
 				DEE102052A1D0BB7000ED6AE /* SplashView.swift in Sources */,
 				DE102DAD2A2E24D500149ECA /* ProfileMediator.swift in Sources */,
+				DEDFACF42A3889EE00268459 /* PunishmentView.swift in Sources */,
 				DE102D9D2A2DF71000149ECA /* TaskDeleteCell.swift in Sources */,
 				DE102DB52A2F7EBF00149ECA /* CalendarDayCell.swift in Sources */,
 				DEB2B2BC2A26173F00C26FC5 /* InformationViewController.swift in Sources */,
