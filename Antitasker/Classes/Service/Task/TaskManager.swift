@@ -109,7 +109,8 @@ extension TaskManager: TaskManagerProtocol {
                             name: task.name,
                             description: task.description,
                             date: task.date,
-                            state: .completed
+                            state: .completed,
+                            createdDate: task.createdDate
                         )
                         result[index] = newTask
                         

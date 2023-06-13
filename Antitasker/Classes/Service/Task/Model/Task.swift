@@ -20,13 +20,14 @@ struct Task: Codable, Hashable {
         name: String,
         description: String,
         date: Date,
-        state: TaskStatus
+        state: TaskStatus,
+        createdDate: Date = Date()
     ) {
         self.id = id
         self.name = name
         self.description = description
         self.date = date
         self.state = state
-        self.createdDate = Date()
+        self.createdDate = createdDate
     }
 }
