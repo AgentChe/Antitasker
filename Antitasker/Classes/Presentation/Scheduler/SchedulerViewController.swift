@@ -7,6 +7,7 @@
 
 import UIKit
 import RxSwift
+import RxCocoa
 
 final class SchedulerViewController: UIViewController {
     lazy var mainView = SchedulerView()
@@ -16,6 +17,8 @@ final class SchedulerViewController: UIViewController {
     private lazy var disposeBag = DisposeBag()
     
     private lazy var addButton = UIButton()
+    
+    private lazy var viewDidAppearTrigger = PublishRelay<Void>()
     
     override func loadView() {
         view = mainView
@@ -27,7 +30,8 @@ final class SchedulerViewController: UIViewController {
         let output = viewModel.configure(input: SchedulerViewModel.Input(
             didTapCreateTask: addButton.rx.tap.asSignal(),
             didSelectDate: mainView.tableView.didSelectDate,
-            didSelectTask: mainView.tableView.didSelectTask
+            didSelectTask: mainView.tableView.didSelectTask,
+            viewDidAppear: viewDidAppearTrigger.asSignal()
         ))
         
         output.elements
@@ -43,6 +47,12 @@ final class SchedulerViewController: UIViewController {
             .disposed(by: disposeBag)
         
         inputAddButton()
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        viewDidAppearTrigger.accept(Void())
     }
 }
 
@@ -78,6 +88,9 @@ private extension SchedulerViewController {
         case .task(let task):
             let vc = TaskViewController.make(task: task)
             navigationController?.pushViewController(vc, animated: true)
+        case .punishment(let punishment):
+            let vc = PunishmentViewController.make(punishment: punishment)
+            present(vc, animated: true)
         }
     }
 }

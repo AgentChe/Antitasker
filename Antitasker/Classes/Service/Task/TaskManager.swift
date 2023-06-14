@@ -16,11 +16,15 @@ protocol TaskManagerProtocol {
     func obtainTasks() -> Single<[Task]>
     func delete(id: String) -> Single<Void>
     func complete(id: String) -> Single<Void>
+    func obtainPunishment() -> Single<Punishment?>
+    func donePunishment() -> Single<Void>
+    func appointPunishment() -> Single<Void>
 }
 
 final class TaskManager {
     enum Constants {
         static let tasksKey = "task_manager_tasks_key"
+        static let punishmentKey = "task_manager_punishment_key"
     }
 }
 
@@ -126,5 +130,54 @@ extension TaskManager: TaskManagerProtocol {
                     return Disposables.create()
                 }
             }
+    }
+    
+    func obtainPunishment() -> Single<Punishment?> {
+        Single<Punishment?>.create { event in
+            guard let data = UserDefaults.standard.data(forKey: Constants.punishmentKey) else {
+                event(.success(nil))
+                return Disposables.create()
+            }
+            
+            let punishment = try? JSONDecoder().decode(Punishment.self, from: data)
+            
+            event(.success(punishment))
+            
+            return Disposables.create()
+        }
+    }
+    
+    func donePunishment() -> Single<Void> {
+        Single<Void>.create { event in
+            UserDefaults.standard.removeObject(forKey: Constants.punishmentKey)
+            
+            event(.success(Void()))
+            
+            TaskMediator.shared.donePunishment()
+            
+            return Disposables.create()
+        }
+    }
+    
+    func appointPunishment() -> Single<Void> {
+        Single<Void>.create { event in
+            let all: [Punishment] = [
+                .screen,
+                .virus,
+                .spa,
+                .fastfood
+            ]
+            let punishment = all.randomElement()!
+            
+            if let data = try? JSONEncoder().encode(punishment) {
+                UserDefaults.standard.set(data, forKey: Constants.punishmentKey)
+                
+                TaskMediator.shared.appoint(punishment: punishment)
+            }
+            
+            event(.success(Void()))
+            
+            return Disposables.create()
+        }
     }
 }

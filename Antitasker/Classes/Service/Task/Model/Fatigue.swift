@@ -5,7 +5,7 @@
 //  Created by Андрей Чернышев on 30.05.2023.
 //
 
-enum Fatigue: Codable, Hashable {
+enum Fatigue: Codable, Hashable, Comparable {
     case workLikeHorse
     case ratherWeekend
     case eyesOnClock

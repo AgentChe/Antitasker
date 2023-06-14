@@ -12,6 +12,7 @@ final class SchedulerViewModel {
     enum Route {
         case createTask
         case task(Task)
+        case punishment(Punishment)
     }
     
     private lazy var profile = makeProfile()
@@ -27,6 +28,7 @@ extension SchedulerViewModel {
         let didTapCreateTask: Signal<Void>
         let didSelectDate: Signal<Date>
         let didSelectTask: Signal<Task>
+        let viewDidAppear: Signal<Void>
     }
     
     struct Output {
@@ -49,7 +51,8 @@ extension SchedulerViewModel {
             ),
             route: makeRoute(
                 didTapCreateTask: input.didTapCreateTask,
-                didSelectTask: input.didSelectTask
+                didSelectTask: input.didSelectTask,
+                viewDidAppear: input.viewDidAppear
             )
         )
     }
@@ -158,7 +161,8 @@ private extension SchedulerViewModel {
     
     func makeRoute(
         didTapCreateTask: Signal<Void>,
-        didSelectTask: Signal<Task>
+        didSelectTask: Signal<Task>,
+        viewDidAppear: Signal<Void>
     ) -> Driver<Route> {
         let create = didTapCreateTask
             .map { Route.createTask }
@@ -166,8 +170,32 @@ private extension SchedulerViewModel {
         let task = didSelectTask
             .map { Route.task($0) }
             .asDriver(onErrorDriveWith: .never())
+        let punishment = makePunishmentRoute(viewDidAppear: viewDidAppear)
         return Driver
-            .merge(create, task)
+            .merge(create, task, punishment)
+    }
+    
+    func makePunishmentRoute(viewDidAppear: Signal<Void>) -> Driver<Route> {
+        let initial = taskManager
+            .obtainPunishment()
+            .asObservable()
+        let updated = TaskMediator.shared
+            .didAppointPunishment
+            .asObservable()
+            .map { punishment -> Punishment? in punishment }
+        let done = TaskMediator.shared
+            .didDonePunishment
+            .asObservable()
+            .map { void -> Punishment? in nil }
+        let punishment = Observable
+            .merge(initial,updated, done)
+        
+        return viewDidAppear
+            .asObservable()
+            .withLatestFrom(punishment)
+            .compactMap { $0 }
+            .map { Route.punishment($0) }
+            .asDriver(onErrorDriveWith: .never())
     }
     
     func makeProfile() -> Driver<Profile> {

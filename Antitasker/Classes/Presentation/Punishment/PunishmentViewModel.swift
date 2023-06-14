@@ -17,6 +17,7 @@ final class PunishmentViewModel {
     private let punishment: Driver<Punishment>
     
     private lazy var profileManager = ProfileManager()
+    private lazy var taskManager = TaskManager()
     
     init(punishment: Punishment) {
         self.punishment = BehaviorRelay(value: punishment).asDriver()
@@ -104,6 +105,15 @@ private extension PunishmentViewModel {
     
     func makeRoute(didTapDone: Signal<Void>) -> Driver<Route> {
         didTapDone
+            .asObservable()
+            .flatMapLatest { [weak self] void -> Single<Void> in
+                guard let self = self else {
+                    return .never()
+                }
+                
+                return self.taskManager
+                    .donePunishment()
+            }
             .map { Route.dismiss }
             .asDriver(onErrorDriveWith: .never())
     }

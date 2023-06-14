@@ -14,6 +14,8 @@ final class TaskMediator {
     private lazy var didCreateTaskTrigger = PublishRelay<Task>()
     private lazy var didDeleteTaskTrigger = PublishRelay<String>()
     private lazy var didCompletedTaskTrigger = PublishRelay<String>()
+    private lazy var didAppointPunishmentTrigger = PublishRelay<Punishment>()
+    private lazy var didDonePunishmentTrigger = PublishRelay<Void>()
     
     private init() {}
 }
@@ -38,6 +40,18 @@ extension TaskMediator {
         }
     }
     
+    func appoint(punishment: Punishment) {
+        DispatchQueue.main.async { [weak self] in
+            self?.didAppointPunishmentTrigger.accept(punishment)
+        }
+    }
+    
+    func donePunishment() {
+        DispatchQueue.main.async { [weak self] in
+            self?.didDonePunishmentTrigger.accept(Void())
+        }
+    }
+    
     var didCreateTask: Signal<Task> {
         didCreateTaskTrigger.asSignal()
     }
@@ -48,5 +62,13 @@ extension TaskMediator {
     
     var didCompletedTask: Signal<String> {
         didCompletedTaskTrigger.asSignal()
+    }
+    
+    var didAppointPunishment: Signal<Punishment> {
+        didAppointPunishmentTrigger.asSignal()
+    }
+    
+    var didDonePunishment: Signal<Void> {
+        didDonePunishmentTrigger.asSignal()
     }
 }
